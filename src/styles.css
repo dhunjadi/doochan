@@ -1,5 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./images/dust_scratches.png);
+  background-position: center;
+  background-repeat: repeat;
+  overflow-x: hidden
+}
+
+@media screen and (min-width: 360px) {
+
+  /* NAVBAR */
+
+  #navbar {
+    background-color: #0187FF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+  }
+
+  .logo {
+    color: white;
+    font-size: 12px;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #0187FF;
+    padding: 20px;
+    right: 0;
+    top: 64px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+
+  .menu-list li a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: #0187FF;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-list li:last-child{
+    margin-bottom: 0;
+  }
+
+  .menu-list li a,
+  .menu-list li:last-child a{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .burger-menu i {
+    color: white;
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger-menu .fa-bars{
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .burger-menu .fa-times{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-list.closed{
+    right: -100%;
+    transition: all 0.5s ease-in-out;
+  }
+
 }

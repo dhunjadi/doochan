@@ -7,7 +7,7 @@ const menuList =[
         title: "Art",
         url: "/Art"
     },
-    ,    {
+    {
         title: "Clothing & Shoes",
         url: "/ClothingAndShoes"
     },
