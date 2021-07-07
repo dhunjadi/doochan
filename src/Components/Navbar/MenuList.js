@@ -1,9 +1,5 @@
 const menuList =[
     {
-        title: "Home",
-        url: "/"
-    },
-    {
         title: "Art",
         url: "/Art"
     },
