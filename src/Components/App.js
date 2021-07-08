@@ -8,12 +8,14 @@ import Home from '../pages/Home'
 import HomeAndLiving from '../pages/HomeAndLiving'
 import Jewellery from '../pages/Jewellery'
 import Toys from '../pages/Toys'
+import Sections from "./Sections";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Navbar />
+        
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/Art' component={Art} />
@@ -23,7 +25,7 @@ function App() {
           <Route path='/Toys' component={Toys} />
         </Switch>
       </Router>
-
+      {/* <Sections /> */}
     </div>
   );
 }

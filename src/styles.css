@@ -99,6 +99,99 @@
     transition: all 0.5s ease-in-out;
   }
 
+  /* SECTIONS */
+
+  .home-art, .home-clothing, .home-home, .home-jewellery, .home-toys{
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* PRODUCT - ART */
+
+  #art{
+    padding: 10px;
+  }
+
+  .product-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .product-div{
+    display: block;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 30px 15px 30px;
+    background-color: #ecebeb;
+    margin-bottom: 20px;
+  }
+
+  .product-img{
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-title{
+    font-size: 16px;
+  }
+
+  .product-description{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+  }
+
+   /* HOME - ART */
+
+ /*  .home-art{
+    background-image: url('https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg');
+  } */
+
+
+
+  /* HOME - CLOTHING */
+
+ /*  .home-clothing{
+    background-image: url('https://i.guim.co.uk/img/media/ee6451df50559386d7800dd6fbfda702df6e3ab0/1322_894_5722_3434/master/5722.jpg?width=1200&quality=85&auto=format&fit=max&s=ad72bc17270ee65417fcf503cbe49b30');
+  } */
+
+
+  /* HOME - HOME */
+
+/*   .home-home{
+     background-image: url('https://img.jakpost.net/c/2020/05/13/2020_05_13_95116_1589341986._large.jpg');
+  } */
+
+
+  /* HOME - JEWELLERY */
+
+/*   .home-jewellery{
+    background-image: url('https://cdn.shopify.com/s/files/1/0343/0341/0315/files/Jewellery_Mega_Nav_08_598x.jpg?v=1617693400');
+  } */
+
+
+  /* HOME - TOYS */
+
+ /*  .home-toys{
+    background-image: url('https://internetofbusiness.com/wp-content/uploads/2017/11/toys-2165123_640-1280x720.jpg');
+  }  */ 
+
 }
 
 
@@ -188,5 +281,165 @@
     transition: all 0.5s ease-in-out;
   }
 
+    /* PRODUCT - ART */
+
+    #art{
+      padding: 20px;
+    }
+  
+    .product-div{
+      max-height: 100%;
+      max-width: 33vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: center;
+      padding: 30px 30px 15px 30px;
+      background-color: #ecebeb;
+    }
+  
+    .product-img{
+      max-height: 100%;
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .product-title{
+      font-size: 16px;
+    }
+  
+    .product-description{
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  
+    .add-to-cart-div{
+      margin-left: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+
+  #navbar {
+    background-color: #0187FF;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+  }
+
+  .logo {
+    color: white;
+    font-size: 24px;
+  }
+
+  .menu-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #0187FF;
+    padding: 20px;
+    right: 0;
+    top: 64px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .menu-list li {
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .menu-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+
+  .menu-list li a:hover {
+    background-color: white;
+    border-radius: 5px;
+    color: #0187FF;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-list li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu-list li a,
+  .menu-list li:last-child a {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .burger-menu i {
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+
+  .burger-menu .fa-bars {
+    transform: rotate(180deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .burger-menu .fa-times {
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-list.closed {
+    position: revert;
+    display: flex;
+    flex-direction: row;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #art{
+    padding: 20px;
+  }
+
+  .product-div{
+    max-height: 100%;
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 30px 30px 15px 30px;
+    background-color: #ecebeb;
+  }
+
+  .product-img{
+    max-height: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .product-title{
+    font-size: 16px;
+  }
+
+  .product-description{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart-div{
+    margin-left: auto;
+  }
 
 }
