@@ -1,9 +1,27 @@
 import React from 'react'
+import { jewelleryProducts } from '../productList'
+import Product from '../Components/Product'
 
-export default function Jewellery() {
+export default function Home() {
+
+    function createProduct(props){
+        return(
+            <Product 
+            key={props.id}
+            img={props.img}
+            title={props.title}
+            description={props.description}
+            price={props.price}
+            />
+        )
+    }
+
     return (
-        <div>
-            <h1>Jewellery</h1>
+        <div id='jewellery'>
+           <h1>Home and Living</h1> 
+           <div className="product-container">
+               {jewelleryProducts.map(createProduct)}
+           </div>
         </div>
     )
 }

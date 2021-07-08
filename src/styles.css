@@ -30,6 +30,7 @@
   .logo {
     color: white;
     font-size: 12px;
+    cursor: pointer;
   }
 
   .menu-list {
@@ -111,7 +112,7 @@
     align-items: center;
   }
 
-  /* PRODUCT - ART */
+  /* PRODUCTS */
 
   #art{
     padding: 10px;
@@ -281,7 +282,7 @@
     transition: all 0.5s ease-in-out;
   }
 
-    /* PRODUCT - ART */
+    /* PRODUCTS */
 
     #art{
       padding: 20px;
@@ -328,13 +329,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 999;
   }
 
   .logo {
     color: white;
-    font-size: 24px;
+    font-size: 18px;
+    height: 100%;
   }
 
   .menu-list {
@@ -404,9 +407,13 @@
     position: revert;
     display: flex;
     flex-direction: row;
+    align-items: center;
     right: 0;
     transition: all 0.5s ease-in-out;
+    padding: 0;
   }
+
+  /* PRODUCTS */
 
   #art{
     padding: 20px;
