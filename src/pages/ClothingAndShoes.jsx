@@ -1,5 +1,5 @@
 import React from 'react'
-import { clothesProducts } from '../productList'
+import itemList from '../itemList'
 import Product from '../Components/Product'
 
 
@@ -21,7 +21,7 @@ export default function ClothingAndShoes() {
         <div id='clothes'>
             <h1>Clothing and Shoes</h1>
             <div className="product-container">
-                {clothesProducts.map(createProduct)}
+                {itemList.clothingItems.map(createProduct)}
             </div>
 
         </div>

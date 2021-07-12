@@ -1,5 +1,5 @@
 import React from 'react'
-import { jewelleryProducts } from '../productList'
+import itemList from '../itemList'
 import Product from '../Components/Product'
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
         <div id='jewellery'>
            <h1>Home and Living</h1> 
            <div className="product-container">
-               {jewelleryProducts.map(createProduct)}
+               {itemList.jewelleryItems.map(createProduct)}
            </div>
         </div>
     )

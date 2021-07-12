@@ -1,5 +1,5 @@
 import React from 'react'
-import { artProducts } from '../productList'
+import itemList from '../itemList'
 import Product from '../Components/Product'
 
 export default function Art() {
@@ -20,7 +20,7 @@ export default function Art() {
         <div id='art'>
             <h1>Art</h1>
             <div className="product-container">
-                {artProducts.map(createProduct)}
+                {itemList.artItems.map(createProduct)}
             </div>
 
         </div>
