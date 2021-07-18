@@ -1,14 +1,15 @@
 import React from 'react'
 import itemList from '../itemList'
-import Product from '../Components/Product'
+import Item from '../Components/Item'
 
 export default function Home() {
 
     function createProduct(props){
         return(
-            <Product 
+            <Item 
             key={props.id}
             img={props.img}
+            id={props.id}
             title={props.title}
             description={props.description}
             price={props.price}
@@ -16,11 +17,15 @@ export default function Home() {
         )
     }
 
+    const filtered = itemList.filter((item)=>{
+        return (item.section === 'jewellery')
+    })
+
     return (
         <div id='jewellery'>
            <h1>Home and Living</h1> 
            <div className="product-container">
-               {itemList.jewelleryItems.map(createProduct)}
+               {filtered.map(createProduct)}
            </div>
         </div>
     )

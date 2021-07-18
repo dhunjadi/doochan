@@ -8,6 +8,7 @@ import Home from '../pages/Home'
 import HomeAndLiving from '../pages/HomeAndLiving'
 import Jewellery from '../pages/Jewellery'
 import Toys from '../pages/Toys'
+import ItemScreen from "./ItemScreen";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/HomeAndLiving' component={HomeAndLiving} />
           <Route path='/Jewellery' component={Jewellery} />
           <Route path='/Toys' component={Toys} />
+          <Route path='/item/:id' component={ItemScreen} />
         </Switch>
       </Router>
     </div>

@@ -1,26 +1,33 @@
 import React from 'react'
 import itemList from '../itemList'
-import Product from '../Components/Product'
+import Item from '../Components/Item'
 
 export default function Art() {
 
     function createProduct(props) {
         return (
-            <Product
+            <Item
                 key={props.id}
+                id={props.id}
                 img={props.img}
                 title={props.title}
                 description={props.description}
                 price={props.price}
+                section={props.section}
             />
         )
     }
 
+    const filtered = itemList.filter((item)=>{
+        return (item.section === 'art')
+    })
+
     return (
+
         <div id='art'>
             <h1>Art</h1>
             <div className="product-container">
-                {itemList.artItems.map(createProduct)}
+                {filtered.map(createProduct)}
             </div>
 
         </div>
