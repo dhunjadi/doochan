@@ -192,6 +192,84 @@
     background-image: url('https://internetofbusiness.com/wp-content/uploads/2017/11/toys-2165123_640-1280x720.jpg');
   }   
 
+  /* ITEM SCREEN */
+
+  #item-screen{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-img img{
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .item-details{
+    padding: 0 20px;
+  }
+
+  .item-title{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .item-description{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .item-price{
+    padding: 0 20px;
+  }
+
+
+  .buttons{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add-to-cart-btn-item{
+    background-color: #0187FF;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    width: 70%;
+    height: 36px;
+  }
+
+  .fav-btn-item{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    width: 70px;
+    border-radius: 4px;
+  }
+
+  .more-pictures-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 20vh;
+    width: 90vw;
+    margin-top: 20px;
+  }
+
+  .more-pictures-pic{
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-price p{
+    font-weight: 900;
+    font-size: 32px;
+  }
+
 }
 
 
@@ -316,6 +394,79 @@
     .add-to-cart-div{
       margin-left: auto;
     }
+
+      /* ITEM SCREEN */
+
+  #item-screen{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-img img{
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+
+  .item-details{
+    padding: 0 20px;
+  }
+
+  .item-title{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .item-description{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .buttons{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add-to-cart-btn-item{
+    background-color: #0187FF;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    width: 70%;
+    height: 36px;
+  }
+
+  .fav-btn-item{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    width: 70px;
+    border-radius: 4px;
+  }
+
+  .more-pictures-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 15vh;
+    width: 90vw;
+    margin-top: 20px;
+  }
+
+  .more-pictures-pic{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+  }
+
+  .item-price p{
+    font-weight: 900;
+    font-size: 32px;
+  }
 
 
 }
@@ -447,5 +598,79 @@
   .add-to-cart-div{
     margin-left: auto;
   }
+
+    /* ITEM SCREEN */
+
+    #item-screen{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  
+    .item-img img{
+      max-height: 100%;
+      max-width: 100%;
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+  
+    .item-details{
+      padding: 0 20px;
+      position: relative;
+    
+    }
+  
+    .item-title{
+      font-size: 32px;
+      font-weight: 700;
+    }
+  
+    .item-description{
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+  
+    .buttons{
+      padding: 0 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .add-to-cart-btn-item{
+      background-color: #0187FF;
+      border-radius: 4px;
+      color: white;
+      border: none;
+      width: 70%;
+      height: 36px;
+    }
+  
+    .fav-btn-item{
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      width: 70px;
+      border-radius: 4px;
+    }
+
+    .more-pictures-div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 65vh;
+      width: 10vw;
+    }
+
+    .more-pictures-pic{
+      width: 100px;
+      height: 100px;
+    }
+
+    .item-price p{
+      font-weight: 900;
+      font-size: 32px;
+    }
 
 }
