@@ -5,15 +5,18 @@ import Item from '../Components/Item'
 export default function Art() {
 
     function createProduct(props) {
+
+        const { id, img, title, description, price, section } = props
+
         return (
             <Item
-                key={props.id}
-                id={props.id}
-                img={props.img}
-                title={props.title}
-                description={props.description}
-                price={props.price}
-                section={props.section}
+                key={id}
+                id={id}
+                img={img}
+                title={title}
+                description={description}
+                price={price}
+                section={section}
             />
         )
     }

@@ -18,7 +18,7 @@ export default function Navbar() {
 
     return (
         <div id='navbar'>
-            <div className="logo"><h1 onClick={()=>{history.push('/')}}>Doochan</h1></div>
+            <div className="logo"><h1 onClick={() => { history.push('/') }}>Doochan</h1></div>
             <div className="burger-menu" onClick={() => { setClicked(!clicked) }}>
                 <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
             </div>

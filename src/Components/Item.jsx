@@ -3,14 +3,16 @@ import { Link } from 'react-router-dom'
 
 export default function Item(props) {  
 
+    const {id, img, title, description, price} = props
+
     return (
-        <div className='item-div' onClick={()=>{console.log('fdsf')}}>
-            <Link to={`/item/${props.id}`}>
-                <div className="item-img-div"> <img className='product-img' src={props.img} alt="" /> </div>
-                <div className="item-title"> <h3>{props.title}</h3> </div>
-                <div className="item-description"> <p>{props.description}</p> </div>
+        <div className='item-div'>
+            <Link to={`/item/${id}`}>
+                <div className="item-img-div"> <img className='product-img' src={img} alt="" /> </div>
+                <div className="item-title"> <h3>{title}</h3> </div>
+                <div className="item-description"> <p>{description}</p> </div>
                 <div className="add-to-cart-div">
-                    <span>{props.price}</span>
+                    <span>{price}</span>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
             </Link>

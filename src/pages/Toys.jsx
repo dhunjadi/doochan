@@ -4,15 +4,19 @@ import Item from '../Components/Item'
 
 export default function Home() {
 
-    function createProduct(props){
-        return(
-            <Item 
-            key={props.id}
-            img={props.img}
-            id={props.id}
-            title={props.title}
-            description={props.description}
-            price={props.price}
+    function createProduct(props) {
+
+        const { id, img, title, description, price, section } = props
+
+        return (
+            <Item
+                key={id}
+                id={id}
+                img={img}
+                title={title}
+                description={description}
+                price={price}
+                section={section}
             />
         )
     }
@@ -22,8 +26,8 @@ export default function Home() {
     })
 
     return (
-        <div id='jewellery'>
-           <h1>Home and Living</h1> 
+        <div id='toys'>
+           <h1>Toys</h1> 
            <div className="product-container">
                {filtered.map(createProduct)}
            </div>

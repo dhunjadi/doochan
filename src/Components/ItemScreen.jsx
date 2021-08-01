@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import itemList from '../itemList'
 import { useParams } from 'react-router'
 
@@ -7,13 +7,19 @@ export default function ItemScreen(props) {
     const { id } = useParams();
     const item = itemList[`${id - 1}`]
 
+    const [picture, setPicture] = useState(item.img)
+
+    const handlePictureClick = (e) =>{
+        setPicture(e.target.currentSrc)
+    }
+
 
     return (
         <div id='item-screen'>
             <div className='item-img-div'>
-                <div className="item-img"> <img src={item.img} alt="" /> </div>
+                <div className="item-img"> <img src={picture} alt="" /> </div>
                 <div className="item-price">
-                    <p>$9.99</p>
+                    <p>{item.price}</p>
                 </div>
                 <div className="item-details">
                     <p className='item-title'>{item.title}</p>
@@ -25,12 +31,11 @@ export default function ItemScreen(props) {
                 </div>
             </div>
             <div className="more-pictures-div">
-                <div className="more-pictures"> <img className='more-pictures-pic' src="https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg" alt="" /> </div>
-                <div className="more-pictures"> <img className='more-pictures-pic' src="https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg" alt="" /> </div>
-                <div className="more-pictures"> <img className='more-pictures-pic' src="https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg" alt="" /> </div>
-                <div className="more-pictures"> <img className='more-pictures-pic' src="https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg" alt="" /> </div>
-                <div className="more-pictures"> <img className='more-pictures-pic' src="https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg" alt="" /> </div>
-
+                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img} alt="" /> </div>
+                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img2} alt="" /> </div>
+                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img3} alt="" /> </div>
+                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img4} alt="" /> </div>
+                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img5} alt="" /> </div>
             </div>
         </div>
     )

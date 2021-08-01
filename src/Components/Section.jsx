@@ -3,12 +3,14 @@ import { useHistory } from 'react-router'
 
 export default function Section(props) {
 
+    const { listDivClass, route, headlineDiv, headlineClass, headline } = props
+
     const history = useHistory()
 
     return (
-        <div className={props.listDivClass} onClick={()=>{history.push(`/${props.route}`)}}>
-            <div className={props.headlineDiv}>
-                <h1 className={props.headlineClass}>{props.headline}</h1>
+        <div className={listDivClass} onClick={()=>{history.push(`/${route}`)}}>
+            <div className={headlineDiv}>
+                <h1 className={headlineClass}>{headline}</h1>
             </div>
         </div>
     )
