@@ -5,6 +5,7 @@ export default function Item(props) {
 
     const {id, img, title, description, price} = props
 
+
     return (
         <div className='item-div'>
             <Link to={`/item/${id}`}>
@@ -21,3 +22,4 @@ export default function Item(props) {
 
     )
 }
+

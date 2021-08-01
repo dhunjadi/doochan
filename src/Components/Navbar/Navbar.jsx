@@ -8,7 +8,7 @@ export default function Navbar() {
 
     const history = useHistory()
 
-    function createList({ url, title }, index) {
+    const createList = ({ url, title }, index) => {
         return (
             <li key={index}>
                 <NavLink exact to={url} activeClassName='active'>{title}</NavLink>

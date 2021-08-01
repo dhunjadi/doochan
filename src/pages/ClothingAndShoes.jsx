@@ -9,11 +9,12 @@ export default function ClothingAndShoes() {
 
         const { id, img, title, description, price, section } = props
 
+
         return (
             <Item
                 key={id}
                 id={id}
-                img={img}
+                img={img[0].img}
                 title={title}
                 description={description}
                 price={price}

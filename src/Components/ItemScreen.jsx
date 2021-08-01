@@ -7,12 +7,17 @@ export default function ItemScreen(props) {
     const { id } = useParams();
     const item = itemList[`${id - 1}`]
 
-    const [picture, setPicture] = useState(item.img)
+    const [picture, setPicture] = useState(item.img[0].img)
 
     const handlePictureClick = (e) =>{
         setPicture(e.target.currentSrc)
     }
 
+    const createMorePictures = (item) => {
+        return(
+            <div key={item.img} className="more-pictures"> <img onClick={handlePictureClick} className='more-pictures-pic' src={item.img} alt="" /> </div>
+        )
+    }
 
     return (
         <div id='item-screen'>
@@ -31,11 +36,9 @@ export default function ItemScreen(props) {
                 </div>
             </div>
             <div className="more-pictures-div">
-                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img} alt="" /> </div>
-                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img2} alt="" /> </div>
-                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img3} alt="" /> </div>
-                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img4} alt="" /> </div>
-                <div onClick={handlePictureClick} className="more-pictures"> <img className='more-pictures-pic' src={item.img5} alt="" /> </div>
+
+            {itemList[`${id - 1}`].img.map(createMorePictures)}
+            
             </div>
         </div>
     )

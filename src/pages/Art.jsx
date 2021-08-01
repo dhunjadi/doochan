@@ -12,7 +12,7 @@ export default function Art() {
             <Item
                 key={id}
                 id={id}
-                img={img}
+                img={img[0].img}
                 title={title}
                 description={description}
                 price={price}
