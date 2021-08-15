@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useContext} from 'react'
+import { CartContext } from './context/CartContext';
 import itemList from '../itemList'
 import { useParams } from 'react-router'
 
@@ -8,6 +9,8 @@ export default function ItemScreen(props) {
     const item = itemList[`${id - 1}`]
 
     const [picture, setPicture] = useState(item.img[0].img)
+
+    const { cart, setCart } = useContext(CartContext)
 
     const handlePictureClick = (e) =>{
         setPicture(e.target.currentSrc)
@@ -19,18 +22,26 @@ export default function ItemScreen(props) {
         )
     }
 
+    const handleAddToCart = (item) =>{
+        setCart([...cart, item])
+        console.log(cart)
+    }
+
+   
+
     return (
         <div id='item-screen'>
             <div className='item-img-div'>
                 <div className="item-img"> <img src={picture} alt="" /> </div>
                 <div className="item-price">
                     <p>{item.price}</p>
+                    
                 </div>
                 <div className="item-details">
                     <p className='item-title'>{item.title}</p>
                     <p className='item-description'>{item.description}</p>
                     <div className="buttons">
-                        <button className='add-to-cart-btn-item'>Add To Cart</button>
+                        <button onClick={ () => handleAddToCart(item)} className='add-to-cart-btn-item'>Add To Cart</button>
                         <button className='fav-btn-item'>Favorite</button>
                     </div>
                 </div>
