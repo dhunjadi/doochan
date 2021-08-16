@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 export default function Item(props) {  
 
     const {id, img, title, description, price} = props
@@ -14,7 +15,7 @@ export default function Item(props) {
                 <div className="item-description"> <p>{description}</p> </div>
                 <div className="add-to-cart-div">
                     <span>{price}</span>
-                    <i className="fas fa-shopping-cart"></i>
+                
                 </div>
             </Link>
         </div>

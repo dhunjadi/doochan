@@ -2,7 +2,7 @@ const itemList = [{
         id: 1,
         title: 'The Starry Night',
         description: 'description 1',
-        price: '$100',
+        price: 100,
         section: 'art',
         img: [{
                 img: "https://www.vangoghgallery.com/img/starry_night_full.jpg",
@@ -26,7 +26,7 @@ const itemList = [{
         id: 2,
         title: 'The Mona Lisa',
         description: 'description 2',
-        price: '$200',
+        price: 200,
         section: 'art',
         img: [{
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
@@ -50,7 +50,7 @@ const itemList = [{
         id: 3,
         title: 'The Scream',
         description: 'description 3',
-        price: '$300',
+        price: 300,
         section: 'art',
         img: [{
                 img: "https://i2.wp.com/see.news/wp-content/uploads/2021/02/edvard-munch-the-scream.jpg",
@@ -74,7 +74,7 @@ const itemList = [{
         id: 4,
         title: 'The American Gothic',
         description: 'description 4',
-        price: '$400',
+        price: 400,
         section: 'art',
         img: [{
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/1200px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg",
@@ -98,7 +98,7 @@ const itemList = [{
         id: 5,
         title: 'The Night Watch',
         description: 'description 5',
-        price: '$500',
+        price: 500,
         section: 'art',
         img: [{
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/1200px-The_Night_Watch_-_HD.jpg",
@@ -123,7 +123,7 @@ const itemList = [{
         id: 6,
         title: 'The Birth of Venus',
         description: 'description 6',
-        price: '$600',
+        price: 600,
         section: 'art',
         img: [{
                 img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1200px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
@@ -146,7 +146,7 @@ const itemList = [{
         id: 7,
         title: 'T-shirt',
         description: 'description 1',
-        price: '$100',
+        price: 100,
         section: 'clothes',
         img: [{
                 img: "https://www.asket.com/imgproxy/e:1/format:jpeg/width:1080/resize:fit/quality:80/plain/https://asket.centracdn.net/client/dynamic/images/2_00d6bb1f5b-asket_tee_white_cart_thumb-original.jpg@jpg",
@@ -171,7 +171,7 @@ const itemList = [{
         id: 8,
         title: 'Jeans',
         description: 'description 2',
-        price: '$200',
+        price: 200,
         section: 'clothes',
         img: [{
                 img: "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1584477049-best-jeans-4-1584477027.jpg",
@@ -195,7 +195,7 @@ const itemList = [{
         id: 9,
         title: 'Dress Shirt',
         description: 'description 3',
-        price: '$300',
+        price: 300,
         section: 'clothes',
         img: [{
                 img: "https://m.media-amazon.com/images/I/71oun0H72sL._AC_UL1500_.jpg",
@@ -219,7 +219,7 @@ const itemList = [{
         id: 10,
         title: 'Polo Shirt',
         description: 'description 4',
-        price: '$400',
+        price: 400,
         section: 'clothes',
         img: [{
                 img: "https://cf.shopee.ph/file/29ac0105eeea1ec7ffe98267e0195b78",
@@ -244,7 +244,7 @@ const itemList = [{
         id: 11,
         title: 'Sleeveless Shirt',
         description: 'description 5',
-        price: '$500',
+        price: 500,
         section: 'clothes',
         img: [{
                 img: "https://martinvalen.com/13819/men-s-basic-sleeveless-t-shirt-in-red.jpg",
@@ -268,7 +268,7 @@ const itemList = [{
         id: 12,
         title: 'Shorts',
         description: 'description 6',
-        price: '$600',
+        price: 600,
         section: 'clothes',
         img: [{
                 img: "https://www.iciw.com/bilder/artiklar/ICIW-309.jpg",
@@ -293,7 +293,7 @@ const itemList = [{
         id: 13,
         title: 'Desk Lamp',
         description: 'description 1',
-        price: '$100',
+        price: 100,
         section: 'home',
         img: [{
                 img: "https://www.smow.com/pics/mi-001-000/midgard-federzug-tischleuchte-schwarz-01_zoom.jpg",
@@ -317,7 +317,7 @@ const itemList = [{
         id: 14,
         title: 'Sofa',
         description: 'description 2',
-        price: '$200',
+        price: 200,
         section: 'home',
         img: [{
                 img: "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dwbdde3874/images/1320000/1323062.jpg",
@@ -342,7 +342,7 @@ const itemList = [{
         id: 15,
         title: 'Round Table',
         description: 'description 3',
-        price: '$300',
+        price: 300,
         section: 'home',
         img: [{
                 img: "https://cdn.shopify.com/s/files/1/0104/1524/3330/products/zoco-home-furnitures-furnitures-tables-round-dining-table-120cm-tab1013-11553664958530_1000x1000.png?v=1588204770",
@@ -366,7 +366,7 @@ const itemList = [{
         id: 16,
         title: 'Chair',
         description: 'description 4',
-        price: '$400',
+        price: 400,
         section: 'home',
         img: [{
                 img: "https://loverthreads.com/wp-content/uploads/2021/02/81J5r9dANGL._SL1500_.jpg",
@@ -391,7 +391,7 @@ const itemList = [{
         id: 17,
         title: 'Curtains',
         description: 'description 5',
-        price: '$500',
+        price: 500,
         section: 'home',
         img: [{
                 img: "https://www.ikea.com/cz/en/images/products/lill-net-curtains-1-pair-white__0887768_pe569661_s5.jpg",
@@ -416,7 +416,7 @@ const itemList = [{
         id: 18,
         title: 'Bed',
         description: 'description 6',
-        price: '$600',
+        price: 600,
         section: 'home',
         img: [{
                 img: "https://cdn.shopify.com/s/files/1/2660/5202/products/xoir1j2ihw9b4bw2apj5_a6ba22e9-258d-435e-86c6-7fadbe115a84_1400x.jpg?v=1598896506",
@@ -441,7 +441,7 @@ const itemList = [{
         id: 19,
         title: "Men's Bracelet",
         description: 'description 1',
-        price: '$100',
+        price: 100,
         section: 'jewellery',
         img: [{
                 img: "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5519330_png_var2/cocktail-watch--metal-bracelet--silver-tone--stainless-steel-swarovski-5519330.png",
@@ -465,7 +465,7 @@ const itemList = [{
         id: 20,
         title: "Men's Necklace",
         description: 'description 2',
-        price: '$200',
+        price: 200,
         section: 'jewellery',
         img: [{
                 img: "https://www.dmarge.com/wp-content/uploads/2021/03/best-mens-necklaces-miansai.jpg",
@@ -489,7 +489,7 @@ const itemList = [{
         id: 21,
         title: "Men's Ring",
         description: 'description 3',
-        price: '$300',
+        price: 300,
         section: 'jewellery',
         img: [{
                 img: "https://n3.sdlcdn.com/imgs/j/n/r/Ratan-Bazaar-Silver-challa-Fashion-SDL703729938-2-38319.jpg",
@@ -513,7 +513,7 @@ const itemList = [{
         id: 22,
         title: "Women's necklace",
         description: 'description 4',
-        price: '$400',
+        price: 400,
         section: 'jewellery',
         img: [{
                 img: "https://fleur-parfumerie.com/wp-content/uploads/2018/03/001.jpg",
@@ -537,7 +537,7 @@ const itemList = [{
         id: 23,
         title: "Women's Bracelet",
         description: 'description 5',
-        price: '$500',
+        price: 500,
         section: 'jewellery',
         img: [{
                 img: "https://ae01.alicdn.com/kf/HTB1TqB1SXXXXXcmaXXXq6xXFXXXc/New-Style-pure-Gold-Color-Bracelets-Bangles-For-Girls-women-24k-GP-Unique-Design-bracelet-gold.jpg_Q90.jpg_.webp",
@@ -561,7 +561,7 @@ const itemList = [{
         id: 24,
         title: "Women's Ring",
         description: 'description 6',
-        price: '$600',
+        price: 600,
         section: 'jewellery',
         img: [{
                 img: "https://cdn.shopify.com/s/files/1/0259/0713/products/platinum-diamond-rings-infinity-platinum-ring-with-diamonds-for-women-jl-pt-460-1.jpg?v=1533138215",
@@ -585,7 +585,7 @@ const itemList = [{
         id: 25,
         title: 'Toy Car',
         description: 'description 1',
-        price: '$100',
+        price: 100,
         section: 'toy',
         img: [{
                 img: "https://i.ebayimg.com/00/s/MTA2MlgxNjAw/z/gBgAAOSwT7NeAf-3/$_57.JPG",
@@ -609,7 +609,7 @@ const itemList = [{
         id: 26,
         title: 'Toy Truck',
         description: 'description 2',
-        price: '$200',
+        price: 200,
         section: 'toy',
         img: [{
                 img: "https://m.media-amazon.com/images/I/71XLasbZjIL._AC_SL1500_.jpg",
@@ -633,7 +633,7 @@ const itemList = [{
         id: 27,
         title: 'Superman Action Figure',
         description: 'description 3',
-        price: '$300',
+        price: 300,
         section: 'toy',
         img: [{
                 img: "https://media.entertainmentearth.com/assets/images/5f9137046c86454f9451666cd241e354xl.jpg",
@@ -657,7 +657,7 @@ const itemList = [{
         id: 28,
         title: 'Spiderman Action Figure',
         description: 'description 4',
-        price: '$400',
+        price: 400,
         section: 'toy',
         img: [{
                 img: "https://m.media-amazon.com/images/I/815k5V8u7gL._AC_SL1500_.jpg",
@@ -685,7 +685,7 @@ const itemList = [{
         id: 29,
         title: 'Batman Action Figure',
         description: 'description 5',
-        price: '$500',
+        price: 500,
         section: 'toy',
         img: [{
                 img: "https://m.media-amazon.com/images/I/71d7v4yQAVS._AC_SL1500_.jpg",
@@ -709,7 +709,7 @@ const itemList = [{
         id: 30,
         title: 'Wolverine Action Figure',
         description: 'description 6',
-        price: '$600',
+        price: 600,
         section: 'toy',
         img: [{
                 img: "https://m.media-amazon.com/images/I/71LyEU7haQL._AC_SL1500_.jpg",

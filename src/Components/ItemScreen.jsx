@@ -24,7 +24,6 @@ export default function ItemScreen(props) {
 
     const handleAddToCart = (item) =>{
         setCart([...cart, item])
-        console.log(cart)
     }
 
    
