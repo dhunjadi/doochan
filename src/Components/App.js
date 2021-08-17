@@ -11,11 +11,15 @@ import Toys from '../pages/Toys'
 import Cart from "../pages/Cart";
 import ItemScreen from "./ItemScreen";
 import { CartContextProvider } from "./context/CartContext";
+import { DataContextProvider } from "./context/DataContext"
 
 
 
 function App() {
+
+
   return (
+    <DataContextProvider>
     <CartContextProvider>
       <div className="App">
         <Router>
@@ -33,6 +37,7 @@ function App() {
         </Router>
       </div>
     </CartContextProvider>
+    </DataContextProvider>
   );
 }
 

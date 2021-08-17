@@ -2,7 +2,7 @@ import React from 'react'
 import itemList from '../itemList'
 import Item from '../Components/Item'
 
-export default function Home() {
+export default function Jewellery() {
 
     function createProduct(props) {
 
