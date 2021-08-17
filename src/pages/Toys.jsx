@@ -1,10 +1,14 @@
-import React from 'react'
-import itemList from '../itemList'
+import React, {useContext} from 'react'
+import { DataContext } from '../Components/context/DataContext'
 import Item from '../Components/Item'
 
 export default function Toys() {
 
-    function createProduct(props) {
+   const { fetchedData } = useContext(DataContext)
+
+   console.log(fetchedData)
+
+    const createProduct = (props) => {
 
         const { id, img, title, description, price, section } = props
 
@@ -21,16 +25,19 @@ export default function Toys() {
         )
     }
 
-    const filtered = itemList.filter((item)=>{
+    const filtered = fetchedData.filter((item)=>{
         return (item.section === 'toy')
     })
 
     return (
-        <div id='toys'>
-           <h1>Toys</h1> 
-           <div className="product-container">
-               {filtered.map(createProduct)}
-           </div>
+
+        <div id='toy'>
+            <h1>Art</h1>
+            <div className="product-container">
+                {filtered.map(createProduct)}
+            </div>
+
         </div>
     )
 }
+

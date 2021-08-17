@@ -24,9 +24,10 @@ export const DataContextProvider = ({children}) => {
  
 
     return(
+        fetchedData ?
         <DataContext.Provider value={{ fetchedData, setFetchedData }}>
         {children}
-        </DataContext.Provider>
+        </DataContext.Provider> : null
     )
 }
 

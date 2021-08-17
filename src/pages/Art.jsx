@@ -1,10 +1,14 @@
-import React from 'react'
-import itemList from '../itemList'
+import React, {useContext} from 'react'
+import { DataContext } from '../Components/context/DataContext'
 import Item from '../Components/Item'
 
 export default function Art() {
 
-    function createProduct(props) {
+   const { fetchedData } = useContext(DataContext)
+
+    console.log(fetchedData)
+
+    const createProduct = (props) => {
 
         const { id, img, title, description, price, section } = props
 
@@ -21,7 +25,7 @@ export default function Art() {
         )
     }
 
-    const filtered = itemList.filter((item)=>{
+    const filtered = fetchedData.filter((item)=>{
         return (item.section === 'art')
     })
 
@@ -36,3 +40,4 @@ export default function Art() {
         </div>
     )
 }
+
