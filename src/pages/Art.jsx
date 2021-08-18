@@ -33,7 +33,7 @@ export default function Art() {
 
         <div id='art'>
             <h1>Art</h1>
-            <div className="product-container">
+            <div className="item-container">
                 {filtered.map(createProduct)}
             </div>
 

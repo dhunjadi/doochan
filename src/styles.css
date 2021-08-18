@@ -18,7 +18,7 @@
 
   /* NAVBAR */
 
-   #navbar {
+  #navbar {
     background-color: #0187FF;
     padding: 20px;
     display: flex;
@@ -102,7 +102,11 @@
 
   /* SECTIONS */
 
-  .home-art, .home-clothing, .home-home, .home-jewellery, .home-toys{
+  .home-art,
+  .home-clothing,
+  .home-home,
+  .home-jewellery,
+  .home-toys {
     height: 80vh;
     width: 100%;
     background-size: cover;
@@ -112,20 +116,20 @@
     align-items: center;
   }
 
-  /* PRODUCTS */
+  /* ITEMS */
 
-  #art{
+  #art {
     padding: 10px;
   }
 
-  .product-container{
+  .item-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  .product-div{
+  .item-div {
     display: block;
     flex-direction: column;
     justify-content: left;
@@ -134,106 +138,157 @@
     padding: 30px 30px 15px 30px;
     background-color: #ecebeb;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   }
 
-  .product-img{
+  .item-img {
     max-height: 100%;
     max-width: 100%;
     margin-bottom: 10px;
   }
 
-  .product-title{
+  .item-title {
     font-size: 16px;
   }
 
-  .product-description{
+  .item-description {
     font-size: 12px;
     margin-bottom: 10px;
   }
 
-  .add-to-cart-div{
+  .add-to-cart-div {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-between
+    justify-content: space-between
   }
 
-   /* HOME - ART */
+  /* HOME - ART */
 
-   .home-art{
-    background-image: url('https://www.pictureframesexpress.co.uk/blog/wp-content/uploads/2020/05/7-Tips-to-Finding-Art-Inspiration-Header-1024x649.jpg');
-  } 
+  .home-art {
+    max-height: 30vh;
+    opacity: 30%;
+    background-image: url('https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/wide-open-ocean-art-by-linda-woods-linda-woods.jpg');
+    background-position: center;
+    background-size: 100vw;
+  }
+
+  .home-art:hover {
+    opacity: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
 
   /* HOME - CLOTHING */
 
-   .home-clothing{
-    background-image: url('https://i.guim.co.uk/img/media/ee6451df50559386d7800dd6fbfda702df6e3ab0/1322_894_5722_3434/master/5722.jpg?width=1200&quality=85&auto=format&fit=max&s=ad72bc17270ee65417fcf503cbe49b30');
-  } 
+  .home-clothing {
+    max-height: 30vh;
+    opacity: 30%;
+    background-image: url('https://cdn.makespace.com/blog/wp-content/uploads/2016/10/20165515/how-to-organize-your-closet1-1600x715.jpg');
+    background-position: center;
+    background-size: 100vw;
+  }
+
+  .home-clothing:hover {
+    opacity: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
 
   /* HOME - HOME */
 
-  .home-home{
-     background-image: url('https://img.jakpost.net/c/2020/05/13/2020_05_13_95116_1589341986._large.jpg');
-  } 
+  .home-home {
+    max-height: 30vh;
+    opacity: 30%;
+    background-image: url('https://images.homify.com/c_fill,f_auto,h_700,q_auto/v1535977485/p/photo/image/2700198/minimalist-living-room.jpg');
+    background-position: center;
+    background-size: 100vw;
+  }
+
+  .home-home:hover {
+    opacity: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
 
   /* HOME - JEWELLERY */
 
-   .home-jewellery{
-    background-image: url('https://cdn.shopify.com/s/files/1/0343/0341/0315/files/Jewellery_Mega_Nav_08_598x.jpg?v=1617693400');
-  } 
+  .home-jewellery {
+    max-height: 30vh;
+    opacity: 30%;
+    background-image: url('https://cdn.shopify.com/s/files/1/0642/2855/files/bass-jewellery-banner-3_8a9e8533-c8a0-4985-9a27-81a00162df40_1400x.progressive.jpg?v=1572837021');
+    background-position: center;
+    background-size: 100vw;
+  }
+
+  .home-jewellery:hover {
+    opacity: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
 
   /* HOME - TOYS */
 
-   .home-toys{
-    background-image: url('https://internetofbusiness.com/wp-content/uploads/2017/11/toys-2165123_640-1280x720.jpg');
-  }   
+  .home-toys {
+    max-height: 30vh;
+    opacity: 30%;
+    background-image: url('https://img-st.xyz/mshp/wh20210223185823999/20210225/a23464a5cc2046469be9155e0968d7d8.jpg');
+    background-position: center;
+    background-size: 100vw;
+  }
+
+  .home-toys:hover {
+    opacity: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
 
   /* ITEM SCREEN */
 
-  #item-screen{
+  #item-screen {
     display: flex;
     flex-direction: column;
   }
 
-  .item-img img{
+  .item-img img {
     max-height: 100%;
     max-width: 100%;
     padding: 20px;
     margin-bottom: 10px;
   }
 
-  .item-details{
+  .item-details {
     padding: 0 20px;
   }
 
-  .item-title{
+  .item-title {
     font-size: 32px;
     font-weight: 700;
   }
 
-  .item-description{
+  .item-description {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
   }
 
-  .item-price{
+  .item-price {
     padding: 0 20px;
   }
 
 
-  .buttons{
+  .buttons {
     padding: 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .add-to-cart-btn-item{
+  .add-to-cart-btn-item {
     background-color: #0187FF;
     border-radius: 4px;
     color: white;
@@ -242,7 +297,7 @@
     height: 36px;
   }
 
-  .fav-btn-item{
+  .fav-btn-item {
     background-color: transparent;
     color: black;
     border: 1px solid black;
@@ -250,7 +305,7 @@
     border-radius: 4px;
   }
 
-  .more-pictures-div{
+  .more-pictures-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -260,74 +315,74 @@
     margin-top: 20px;
   }
 
-  .more-pictures-pic{
+  .more-pictures-pic {
     width: 100px;
     height: 100px;
   }
 
-  .item-price p{
+  .item-price p {
     font-weight: 900;
     font-size: 32px;
   }
 
-      /* CART PAGE */
+  /* CART PAGE */
 
-      .cart-item-div{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-        align-items: center;
-  
-      }
-  
-      .cart-item-img{
-        max-width: 250px;
-        max-height: 250px;
-        
-      }
-  
-      .cart-item-details{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 20px;
-      }
-  
-     .cart-item-price{
-       display: flex;
-       align-items: center;
-       margin-bottom: 20px;
-     }
-  
-     .cart-number-input-div{
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-     }
-  
-     .cart-number-input{
-       width: 40px;
-       height: 40px;
-       margin-bottom: 20px;
-     }
-  
-     .cart-item-price-total{
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-  
-  
-    .cart-remove-item-btn{
-      display: flex;
-      align-items: center;
-    }
+  .cart-item-div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
 
-    hr{
-      border: 1px solid #333;
-      width: 100vw;
-      margin-top: 20px;
-    }
+  }
+
+  .cart-item-img {
+    max-width: 250px;
+    max-height: 250px;
+
+  }
+
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .cart-item-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .cart-number-input-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .cart-number-input {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .cart-item-price-total {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+
+  .cart-remove-item-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  hr {
+    border: 1px solid #333;
+    width: 100vw;
+    margin-top: 20px;
+  }
 
 }
 
@@ -418,79 +473,170 @@
     transition: all 0.5s ease-in-out;
   }
 
-    /* PRODUCTS */
+  /* ITEMS */
 
-    #art{
-      padding: 20px;
+  #art {
+    padding: 20px;
+  }
+
+  .item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item-div {
+    max-height: 100%;
+    max-width: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    padding: 30px 30px 15px 30px;
+    background-color: #ecebeb;
+    flex-wrap: wrap;
+  }
+
+  .item-img {
+    max-height: 50%;
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+
+  .item-title {
+    font-size: 16px;
+  }
+
+  .item-description {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .add-to-cart-div {
+    margin-left: auto;
+  }
+
+    /* HOME - ART */
+
+    .home-art {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/wide-open-ocean-art-by-linda-woods-linda-woods.jpg');
+      background-position: center;
+      background-size: cover;
     }
   
-    .product-div{
-      max-height: 100%;
-      max-width: 33vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: center;
-      padding: 30px 30px 15px 30px;
-      background-color: #ecebeb;
+    .home-art:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
   
-    .product-img{
-      max-height: 50%;
-      max-width: 50%;
-      margin-bottom: 10px;
+  
+    /* HOME - CLOTHING */
+  
+    .home-clothing {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://cdn.makespace.com/blog/wp-content/uploads/2016/10/20165515/how-to-organize-your-closet1-1600x715.jpg');
+      background-position: center;
+      background-size: cover;
     }
   
-    .product-title{
-      font-size: 16px;
+    .home-clothing:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
   
-    .product-description{
-      font-size: 12px;
-      margin-bottom: 10px;
+  
+    /* HOME - HOME */
+  
+    .home-home {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://images.homify.com/c_fill,f_auto,h_700,q_auto/v1535977485/p/photo/image/2700198/minimalist-living-room.jpg');
+      background-position: center;
+      background-size: cover;
     }
   
-    .add-to-cart-div{
-      margin-left: auto;
+    .home-home:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+  
+  
+    /* HOME - JEWELLERY */
+  
+    .home-jewellery {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://cdn.shopify.com/s/files/1/0642/2855/files/bass-jewellery-banner-3_8a9e8533-c8a0-4985-9a27-81a00162df40_1400x.progressive.jpg?v=1572837021');
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .home-jewellery:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+  
+  
+    /* HOME - TOYS */
+  
+    .home-toys {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://img-st.xyz/mshp/wh20210223185823999/20210225/a23464a5cc2046469be9155e0968d7d8.jpg');
+      background-position: center;
+      background-size: cover;
+    }
+  
+    .home-toys:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
 
-      /* ITEM SCREEN */
+  /* ITEM SCREEN */
 
-  #item-screen{
+  #item-screen {
     display: flex;
     flex-direction: column;
   }
 
-  .item-img img{
+  .item-img img {
     max-height: 50%;
     max-width: 50%;
     padding: 20px;
     margin-bottom: 10px;
   }
 
-  .item-details{
+  .item-details {
     padding: 0 20px;
   }
 
-  .item-title{
+  .item-title {
     font-size: 32px;
     font-weight: 700;
   }
 
-  .item-description{
+  .item-description {
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 10px;
   }
 
-  .buttons{
+  .buttons {
     padding: 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .add-to-cart-btn-item{
+  .add-to-cart-btn-item {
     background-color: #0187FF;
     border-radius: 4px;
     color: white;
@@ -500,7 +646,7 @@
     margin-bottom: 24px;
   }
 
-  .fav-btn-item{
+  .fav-btn-item {
     background-color: transparent;
     color: black;
     border: 1px solid black;
@@ -508,7 +654,7 @@
     border-radius: 4px;
   }
 
-  .more-pictures-div{
+  .more-pictures-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -517,68 +663,68 @@
     margin-top: 20px;
   }
 
-  .more-pictures-pic{
+  .more-pictures-pic {
     width: 100px;
     height: 100px;
     margin-top: 20px;
   }
 
-  .item-price p{
+  .item-price p {
     font-weight: 900;
     font-size: 32px;
   }
 
-      /* CART PAGE */
+  /* CART PAGE */
 
-      .cart-item-div{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  
-      }
-  
-      .cart-item-img{
-        max-width: 150px;
-        max-height: 150px;
-        margin: 20px;
-      }
-  
-      .cart-item-details{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-  
-     .cart-item-price{
-       display: flex;
-       align-items: center;
-     }
-  
-     .cart-number-input-div{
-      display: flex;
-      align-items: center;
-     }
-  
-     .cart-number-input{
-       width: 40px;
-       height: 40px;
-     }
-  
-     .cart-item-price-total{
-      display: flex;
-      align-items: center;
-    }
-  
-  
-    .cart-remove-item-btn{
-      display: flex;
-      align-items: center;
-    }
+  .cart-item-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-    hr{
-      border: 1px solid #333;
-      width: 100vw;
-      margin-top: 20px;
-    }
+  }
+
+  .cart-item-img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 20px;
+  }
+
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cart-item-price {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-number-input-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-number-input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-item-price-total {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .cart-remove-item-btn {
+    display: flex;
+    align-items: center;
+  }
+
+  hr {
+    border: 1px solid #333;
+    width: 100vw;
+    margin-top: 20px;
+  }
 
 
 
@@ -676,13 +822,19 @@
     padding: 0;
   }
 
-  /* PRODUCTS */
+  /* ITEMS */
 
-  #art{
+  #art {
     padding: 20px;
   }
 
-  .product-div{
+  .item-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .item-div {
     max-height: 100%;
     max-width: 25vw;
     display: flex;
@@ -691,152 +843,237 @@
     align-items: center;
     padding: 30px 30px 15px 30px;
     background-color: #ecebeb;
+    flex-wrap: wrap;
   }
 
-  .product-img{
-    max-height: 50%;
-    max-width: 50%;
+  .item-img {
+    max-height: 70%;
+    max-width: 70%;
     margin-bottom: 10px;
   }
 
-  .product-title{
+  .item-title {
     font-size: 16px;
   }
 
-  .product-description{
+  .item-description {
     font-size: 12px;
     margin-bottom: 10px;
   }
 
-  .add-to-cart-div{
+  .add-to-cart-div {
     margin-left: auto;
   }
 
-    /* ITEM SCREEN */
+    /* HOME - ART */
 
-    #item-screen{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
+    .home-art {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/1/wide-open-ocean-art-by-linda-woods-linda-woods.jpg');
+      background-position: center;
+      background-size: 100vw;
     }
   
-    .item-img img{
-      max-height: 50%;
-      max-width: 50%;
-      padding: 20px;
-      margin-bottom: 10px;
+    .home-art:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
   
-    .item-details{
-      padding: 0 20px;
-      position: relative;
-    
+  
+    /* HOME - CLOTHING */
+  
+    .home-clothing {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://cdn.makespace.com/blog/wp-content/uploads/2016/10/20165515/how-to-organize-your-closet1-1600x715.jpg');
+      background-position: center;
+      background-size: 100vw;
     }
   
-    .item-title{
-      font-size: 32px;
-      font-weight: 700;
+    .home-clothing:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
   
-    .item-description{
-      font-size: 24px;
-      font-weight: 400;
-      margin-bottom: 10px;
+  
+    /* HOME - HOME */
+  
+    .home-home {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://images.homify.com/c_fill,f_auto,h_700,q_auto/v1535977485/p/photo/image/2700198/minimalist-living-room.jpg');
+      background-position: center;
+      background-size: 100vw;
     }
   
-    .buttons{
-      padding: 0 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+    .home-home:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
   
-    .add-to-cart-btn-item{
-      background-color: #0187FF;
-      border-radius: 4px;
-      color: white;
-      border: none;
-      width: 70%;
-      height: 36px;
-      margin-bottom: 24px;
+  
+    /* HOME - JEWELLERY */
+  
+    .home-jewellery {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://cdn.shopify.com/s/files/1/0642/2855/files/bass-jewellery-banner-3_8a9e8533-c8a0-4985-9a27-81a00162df40_1400x.progressive.jpg?v=1572837021');
+      background-position: center;
+      background-size: 100vw;
     }
   
-    .fav-btn-item{
-      background-color: transparent;
-      color: black;
-      border: 1px solid black;
-      width: 70px;
-      border-radius: 4px;
+    .home-jewellery:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
+    }
+  
+  
+    /* HOME - TOYS */
+  
+    .home-toys {
+      max-height: 45vh;
+      opacity: 30%;
+      background-image: url('https://img-st.xyz/mshp/wh20210223185823999/20210225/a23464a5cc2046469be9155e0968d7d8.jpg');
+      background-position: center;
+      background-size: 100vw;
+    }
+  
+    .home-toys:hover {
+      opacity: 100%;
+      transition: all 0.5s;
+      cursor: pointer;
     }
 
-    .more-pictures-div{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 65vh;
-      width: 10vw;
-    }
+  /* ITEM SCREEN */
 
-    .more-pictures-pic{
-      width: 100px;
-      height: 100px;
-    }
+  #item-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    .item-price p{
-      font-weight: 900;
-      font-size: 32px;
-    }
+  .item-img img {
+    max-height: 50%;
+    max-width: 50%;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
 
-    /* CART PAGE */
+  .item-details {
+    padding: 0 20px;
+    position: relative;
 
-    .cart-item-div{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 
-    }
+  .item-title {
+    font-size: 32px;
+    font-weight: 700;
+  }
 
-    .cart-item-img{
-      max-width: 200px;
-      max-height: 200px;
-      margin: 20px;
-    }
+  .item-description {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
 
-    .cart-item-details{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  .buttons {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-   .cart-item-price{
-     display: flex;
-     align-items: center;
-   }
+  .add-to-cart-btn-item {
+    background-color: #0187FF;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    width: 70%;
+    height: 36px;
+    margin-bottom: 24px;
+  }
 
-   .cart-number-input-div{
+  .fav-btn-item {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    width: 70px;
+    border-radius: 4px;
+  }
+
+  .more-pictures-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 65vh;
+    width: 10vw;
+  }
+
+  .more-pictures-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-price p {
+    font-weight: 900;
+    font-size: 32px;
+  }
+
+  /* CART PAGE */
+
+  .cart-item-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  }
+
+  .cart-item-img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 20px;
+  }
+
+  .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cart-item-price {
     display: flex;
     align-items: center;
-   }
+  }
 
-   .cart-number-input{
-     width: 40px;
-     height: 40px;
-   }
+  .cart-number-input-div {
+    display: flex;
+    align-items: center;
+  }
 
-   .cart-item-price-total{
+  .cart-number-input {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cart-item-price-total {
     display: flex;
     align-items: center;
   }
 
 
-  .cart-remove-item-btn{
+  .cart-remove-item-btn {
     display: flex;
     align-items: center;
   }
 
-  hr{
+  hr {
     border: 1px solid #333;
     width: 100vw;
     margin-top: 20px;
   }
-  
+
 }
