@@ -1,43 +1,77 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import '../styles.css'
+import "../styles.css";
 import Navbar from "./Navbar/Navbar";
-import Art from '../pages/Art'
-import ClothingAndShoes from '../pages/ClothingAndShoes'
-import Home from '../pages/Home'
-import HomeAndLiving from '../pages/HomeAndLiving'
-import Jewellery from '../pages/Jewellery'
-import Toys from '../pages/Toys'
+import Art from "../pages/Art";
+import ClothingAndShoes from "../pages/ClothingAndShoes";
+import Home from "../pages/Home";
+import HomeAndLiving from "../pages/HomeAndLiving";
+import Jewellery from "../pages/Jewellery";
+import Toys from "../pages/Toys";
 import Cart from "../pages/Cart";
 import ItemScreen from "./ItemScreen";
-import { CartContextProvider } from "./context/CartContext";
-import { DataContextProvider } from "./context/DataContext"
-
-
 
 function App() {
+  const [cart, setCart] = useState([]);
+  const [fetchedData, setFetchedData] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:8000/items")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setFetchedData(data);
+      });
+  }, []);
 
 
+    
   return (
-    <DataContextProvider>
-    <CartContextProvider>
-      <div className="App">
-        <Router>
-          <Navbar />
-          <Switch>
-            <Route path='/' exact component={Home} />
-            <Route path='/Art' component={Art} />
-            <Route path='/ClothingAndShoes' component={ClothingAndShoes} />
-            <Route path='/HomeAndLiving' component={HomeAndLiving} />
-            <Route path='/Jewellery' component={Jewellery} />
-            <Route path='/Toys' component={Toys} />
-            <Route path='/item/:id' component={ItemScreen} />
-            <Route path='/Cart' component={Cart} />
-          </Switch>
-        </Router>
-      </div>
-    </CartContextProvider>
-    </DataContextProvider>
+    <div className="App">
+      <Router>
+        <Navbar cart={cart} />
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+
+          <Route path="/Art">
+            <Art fetchedData={fetchedData} />
+          </Route>
+
+          <Route path="/ClothingAndShoes">
+            <ClothingAndShoes fetchedData={fetchedData} />
+          </Route>
+
+          <Route path="/HomeAndLiving">
+            <HomeAndLiving fetchedData={fetchedData} />
+          </Route>
+
+          <Route path="/Jewellery">
+            <Jewellery fetchedData={fetchedData} />
+          </Route>
+
+          <Route path="/Toys">
+            <Toys fetchedData={fetchedData} />
+          </Route>
+
+          <Route path="/item/:id">
+            <ItemScreen
+              cart={cart}
+              setCart={setCart}
+              fetchedData={fetchedData}
+              Cart={Cart}
+            />
+          </Route>
+
+          <Route path="/Cart">
+            <Cart cart={cart} setCart={setCart} fetchedData={fetchedData} />
+          </Route>
+          
+        </Switch>
+      </Router>
+    </div>
   );
 }
 

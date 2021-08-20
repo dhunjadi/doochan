@@ -11,7 +11,7 @@
   background-image: url(./images/dust_scratches.png);
   background-position: center;
   background-repeat: repeat;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 280px) {

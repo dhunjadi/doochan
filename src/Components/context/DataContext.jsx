@@ -13,13 +13,10 @@ export const DataContextProvider = ({children}) => {
           return res.json()
         })
         .then(data => {
-          console.log(data)
           setFetchedData(data)
-         
         })
       }, [])
 
-      console.log(fetchedData)
 
  
 

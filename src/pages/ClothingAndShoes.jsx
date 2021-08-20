@@ -1,43 +1,32 @@
-import React, {useContext} from 'react'
-import { DataContext } from '../Components/context/DataContext'
-import Item from '../Components/Item'
+import React from "react";
 
-export default function ClothingAndShoes() {
+import Item from "../Components/Item";
 
-   const { fetchedData } = useContext(DataContext)
-
-    console.log(fetchedData)
-
-    const createProduct = (props) => {
-
-        const { id, img, title, description, price, section } = props
-
-        return (
-            <Item
-                key={id}
-                id={id}
-                img={img[0].img}
-                title={title}
-                description={description}
-                price={price}
-                section={section}
-            />
-        )
-    }
-
-    const filtered = fetchedData.filter((item)=>{
-        return (item.section === 'clothes')
-    })
+export default function ClothingAndShoes({ fetchedData }) {
+  const createItem = (newItem) => {
+    const { id, img, title, description, price, section } = newItem;
 
     return (
+      <Item
+        key={id}
+        id={id}
+        img={img[0].img}
+        title={title}
+        description={description}
+        price={price}
+        section={section}
+      />
+    );
+  };
 
-        <div id='clothes'>
-            <h1>Art</h1>
-            <div className="item-container">
-                {filtered.map(createProduct)}
-            </div>
+  const filtered = fetchedData.filter((item) => {
+    return item.section === "clothes";
+  });
 
-        </div>
-    )
+  return (
+    <div id="clothes">
+      <h1>Clothing and Shoes</h1>
+      <div className="item-container">{filtered.map(createItem)}</div>
+    </div>
+  );
 }
-
