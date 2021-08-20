@@ -26,16 +26,27 @@ export default function ItemScreen(props) {
   };
 
   const handleAddToCart = (item) => {
-    console.log(item)
-    setCart([...cart, item]);
+    let newCart = [...cart];
+    let itemInCart = newCart.find(
+      (newItem) => item.title === newItem.title
+    );
+    if(itemInCart){
+      alert('Item is already in the cart!')
+    }else{
+      itemInCart = {
+        ...item,
+        qty: 1,
+      }
+    newCart.push(itemInCart)
+    }
+    setCart(newCart);
+    console.log(itemInCart.qty)
   };
 
   const handleRemoveFromCart = (removeItem) => {
-    setCart(cart.filter(item => item !== removeItem))
-    console.log(cart)
-}
-
-
+    setCart(cart.filter((item) => item !== removeItem));
+    console.log(cart);
+  };
 
   return (
     <div id="item-screen">
@@ -52,7 +63,7 @@ export default function ItemScreen(props) {
           <p className="item-description">{item.description}</p>
           <div className="buttons">
             <button
-              onClick={() => handleAddToCart(item)} 
+              onClick={() => handleAddToCart(item)}
               className="add-to-cart-btn-item"
             >
               Add To Cart

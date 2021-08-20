@@ -2,12 +2,29 @@ import React, { useState } from "react";
 
 export default function CartItem(props) {
   const { img, title, description, price, id, cart, setCart } = props;
-  
+
+  let found = cart.find((thing) => thing.title);
+
   const [quantity, setQuantity] = useState(1);
 
-    const handleRemoveFromCart = (toremove) => {
-        console.log(cart)
+  const handleRemoveFromCart = (toremove) => {
+    console.log(cart);
+  };
+
+  const addOne = () => {
+    if (quantity < 9) {
+      setQuantity((prevQuantity) => prevQuantity + 1);
+      found.qty = quantity + 1;
     }
+  };
+
+  const removeOne = () => {
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+      found.qty = quantity - 1;
+    }
+  };
+
 
   return (
     <>
@@ -17,7 +34,9 @@ export default function CartItem(props) {
         </div>
         <div className="cart-item-details">
           <div className="cart-item-title">
-            <h3>{title}</h3>
+            <h3>
+              {title} qty: {found.qty}
+            </h3>
           </div>
 
           <div className="cart-item-description">
@@ -30,15 +49,9 @@ export default function CartItem(props) {
         </div>
 
         <div className="cart-number-input-div">
-          <input
-            className="cart-number-input"
-            type="number"
-            min="1"
-            placeholder={quantity}
-            onChange={(e) => {
-              setQuantity(e.target.value);
-            }}
-          />
+          <button onClick={removeOne}>-</button>
+          <span>{quantity}</span>
+          <button onClick={addOne}>+</button>
         </div>
 
         <div className="cart-item-price-total">
@@ -46,7 +59,7 @@ export default function CartItem(props) {
         </div>
 
         <div className="cart-remove-item-btn">
-          <button onClick={handleRemoveFromCart} >Remove</button>
+          <button onClick={handleRemoveFromCart}>Remove</button>
         </div>
       </div>
       <hr />
