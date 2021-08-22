@@ -1,21 +1,16 @@
 import React from 'react'
 import sectionList from './SectionList'
 import Section from './Section'
+import { v4 as uuidv4 } from 'uuid';
+
 
 export default function Sections() {
 
-    function createSection(sectionProps) {
+    function createSection(section) {
         return (
             <Section
-                key={sectionProps.id}
-                listDivClass={sectionProps.listDivClass}
-                headlineDiv={sectionProps.headlineDiv}
-                headlineClass={sectionProps.headlineClass}
-                headline={sectionProps.headline}
-                imgDiv={sectionProps.imgDiv}
-                imgClass={sectionProps.imgClass}
-                imgURL={sectionProps.imgURL}
-                route={sectionProps.route}
+                key={uuidv4()}
+                section={section}
             />
         )
     }

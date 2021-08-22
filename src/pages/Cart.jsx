@@ -1,46 +1,78 @@
-import React from "react";
-import CartItem from "../Components/CartItem";
+import React, { useContext, useState } from "react";
+import { CartContext } from "../Components/context/CartContext";
+import { v4 as uuidv4 } from 'uuid';
 
-export default function Cart({ cart, setCart }) {
-  let summedPrices = cart.map((element) => element.price * element.qty);
+export default function Cart() {
+  const { cart, setCart } = useContext(CartContext);
+  const [quantity, setQuantity] = useState(1);
 
-  console.log(summedPrices);
+  let found = cart.find((thing) => thing.title);
 
-  const sumItUp = () => {
-    return cart.reduce((sum, { price }) => sum + price, 0);
+  const addOne = () => {
+    if (quantity < 9) {
+      setQuantity((prevQuantity) => prevQuantity + 1);
+      found.qty = quantity + 1;
+    }
   };
 
-  const displayCartItems = (cartItem) => {
-    const { img, title, description, price, id } = cartItem;
+  const removeOne = () => {
+    if (quantity > 1) {
+      setQuantity((prevQuantity) => prevQuantity - 1);
+      found.qty = quantity - 1;
+    }
+  };
 
-    return (
-      <CartItem
-        key={id}
-        img={img}
-        title={title}
-        description={description}
-        price={price}
-        cart={cart}
-        setCart={setCart}
-        sumItUp={sumItUp}
-      />
-    );
+  const handleRemoveFromCart = (removeItem) => {
+    setCart(cart.filter((x) => x.id !== removeItem.id));
   };
 
   return (
     <div>
       <h1>Cart</h1>
-      {cart.length > 0 ? (
-        <button
+      <button
           onClick={(clearCart) => {
             setCart([]);
           }}
         >
           Clear Cart
         </button>
-      ) : null}
-      <h1>Total: ${sumItUp()}</h1>
-      {cart ? cart.map(displayCartItems) : null}
+      {cart.map((item) => (
+        <>
+          <div className="cart-item-div" key={uuidv4()}>
+            <div className="cart-item-img-div">
+              <img className="cart-item-img" src={item.img[0].img} alt="" />
+            </div>
+            <div className="cart-item-details">
+              <div className="cart-item-title">
+                <h3>{item.title} qty: {found.qty}</h3>
+              </div>
+
+              <div className="cart-item-description">
+                <p>{item.description}</p>
+              </div>
+            </div>
+
+            <div className="cart-item-price">
+              <span>${item.price}</span>
+            </div>
+
+            <div className="cart-number-input-div">
+              <button onClick={removeOne}>-</button>
+              <span>{quantity}</span>
+              <button onClick={addOne}>+</button>
+            </div>
+
+            <div className="cart-item-price-total">
+              <span>${item.price * quantity}</span>
+            </div>
+
+            <div className="cart-remove-item-btn">
+              <button onClick={() => handleRemoveFromCart(item)}>Remove</button>
+            </div>
+          </div>
+          <hr />
+        </>
+      ))}
     </div>
   );
 }

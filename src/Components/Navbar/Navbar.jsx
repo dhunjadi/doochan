@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import menuList from "./MenuList";
 import { NavLink, useHistory } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
+import { CartContext } from "../context/CartContext";
 
-export default function Navbar({ cart }) {
+export default function Navbar() {
   const [clicked, setClicked] = useState(false);
+  const { cart } = useContext(CartContext)
 
   const history = useHistory();
 
-  const createList = ({ url, title }, index) => {
+  const createList = ({ url, title }) => {
     return (
-      <li key={index}>
+      <li key={uuidv4()}>
         <NavLink exact to={url} activeClassName="active">
           {title}
         </NavLink>
@@ -44,9 +47,7 @@ export default function Navbar({ cart }) {
           history.push("/Cart");
         }}
         className="fas fa-shopping-cart"
-      >
-        ({cart.length})
-      </i>
+      >({cart.length})</i>
     </div>
   );
 }

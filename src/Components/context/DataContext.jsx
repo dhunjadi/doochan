@@ -1,31 +1,28 @@
-import {createContext, useState, useEffect} from 'react'
+import { createContext, useState, useEffect } from 'react'
 
 export const DataContext = createContext();
 
 
-export const DataContextProvider = ({children}) => {
+export const DataContextProvider = ({ children }) => {
 
-    const [fetchedData, setFetchedData] = useState(null)
+  const [fetched, setFetched] = useState(null)
 
-    useEffect( () => {
-        fetch('http://localhost:8000/items')
-        .then(res => {
-          return res.json()
-        })
-        .then(data => {
-          setFetchedData(data)
-        })
-      }, [])
+  useEffect(() => {
+    fetch('http://localhost:8000/items')
+      .then(res => {
+        return res.json()
+      })
+      .then(data => {
+        setFetched(data)
+      })
+  }, [])
 
-
- 
-
-    return(
-        fetchedData ?
-        <DataContext.Provider value={{ fetchedData, setFetchedData }}>
+  return (
+    fetched ?
+      <DataContext.Provider value={{ fetched, setFetched }}>
         {children}
-        </DataContext.Provider> : null
-    )
+      </DataContext.Provider> : null
+  )
 }
 
 

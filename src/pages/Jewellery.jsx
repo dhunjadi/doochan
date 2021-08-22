@@ -1,26 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../Components/context/DataContext";
 import Item from "../Components/Item";
+import { v4 as uuidv4 } from 'uuid';
 
-export default function Jewellery({ fetchedData }) {
-  const createItem = (newItem) => {
-    const { id, img, title, description, price, section } = newItem;
-
-    return (
-      <Item
-        key={id}
-        id={id}
-        img={img[0].img}
-        title={title}
-        description={description}
-        price={price}
-        section={section}
-      />
-    );
-  };
-
-  const filtered = fetchedData.filter((item) => {
-    return item.section === "jewellery";
+export default function Jewellery() {
+  const { fetched } = useContext(DataContext)
+  const filtered = fetched.filter((item) => {
+    return item.section === "Jewellery";
   });
+
+  const createItem = (item) => {
+    return <Item key={uuidv4()} item={item} />;
+  };
 
   return (
     <div id="jewellery">

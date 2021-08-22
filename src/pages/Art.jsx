@@ -1,34 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../Components/context/DataContext";
 import Item from "../Components/Item";
+import { v4 as uuidv4 } from 'uuid';
 
-export default function Art({fetchedData}) {
-
-  const createItem = (newItem) => {
-    const { id, img, title, description, price, section } = newItem;
-
-    return (
-      <Item
-        key={id}
-        id={id}
-        img={img[0].img}
-        title={title}
-        description={description}
-        price={price}
-        section={section}
-      />
-    );
-  };
-
-  const filtered = fetchedData.filter((item) => {
-    return item.section === "art";
+export default function Art() {
+  const { fetched } = useContext(DataContext)
+  const filtered = fetched.filter((item) => {
+    return item.section === "Art";
   });
+
+  const createItem = (item) => {
+    return <Item key={uuidv4()} item={item} />;
+  };
 
   return (
     <div id="art">
       <h1>Art</h1>
-      <div className="item-container">
-        {filtered.map(createItem)}
-      </div>
+      <div className="item-container">{filtered.map(createItem)}</div>
     </div>
   );
 }

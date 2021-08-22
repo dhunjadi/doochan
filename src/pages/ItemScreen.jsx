@@ -1,12 +1,37 @@
-import React, { useState } from "react";
-import { useParams } from "react-router";
+import React, { useContext, useState } from "react";
+import { CartContext } from "../Components/context/CartContext";
+import { DataContext } from "../Components/context/DataContext";
+import { useHistory } from 'react-router-dom'
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ItemScreen(props) {
-  const { cart, setCart, fetchedData } = props;
-  const { id } = useParams();
-  const item = fetchedData[`${id - 1}`];
+  const { fetched } = useContext(DataContext);
+  const { cart, setCart } = useContext(CartContext);
+  const item = fetched.find((x) => x.id === props.match.params.id);
+  const history = useHistory()
 
   const [picture, setPicture] = useState(item.img[0].img);
+
+  console.log(cart);
+
+  if (!item) {
+    return <h1>Product does not exist</h1>;
+  }
+
+  const handleAddToCart = (item) => {
+    let newCart = [...cart];
+    let itemInCart = newCart.find((newItem) => item.title === newItem.title);
+    if (itemInCart) {
+      alert("Item is already in the cart!");
+    } else {
+      itemInCart= {
+        ...item,
+        qty: 1
+      }
+      newCart.push(itemInCart)
+    }
+    setCart(newCart)
+  };
 
   const handlePictureClick = (e) => {
     setPicture(e.target.currentSrc);
@@ -14,7 +39,7 @@ export default function ItemScreen(props) {
 
   const createMorePictures = (picture) => {
     return (
-      <div key={picture.img} className="more-pictures">
+      <div key={uuidv4()} className="more-pictures">
         <img
           onClick={handlePictureClick}
           className="more-pictures-pic"
@@ -25,35 +50,12 @@ export default function ItemScreen(props) {
     );
   };
 
-  const handleAddToCart = (item) => {
-    let newCart = [...cart];
-    let itemInCart = newCart.find(
-      (newItem) => item.title === newItem.title
-    );
-    if(itemInCart){
-      alert('Item is already in the cart!')
-    }else{
-      itemInCart = {
-        ...item,
-        qty: 1,
-      }
-    newCart.push(itemInCart)
-    }
-    setCart(newCart);
-    console.log(itemInCart.qty)
-  };
-
-  const handleRemoveFromCart = (removeItem) => {
-    setCart(cart.filter((item) => item !== removeItem));
-    console.log(cart);
-  };
-
   return (
     <div id="item-screen">
+      <p onClick={()=> history.push(`/${item.section}`)}>Back to results</p>
       <div className="item-img-div">
         <div className="item-img">
-          {" "}
-          <img src={picture} alt="" />{" "}
+          <img src={picture} alt="" />
         </div>
         <div className="item-price">
           <p>{item.price}</p>
@@ -68,12 +70,7 @@ export default function ItemScreen(props) {
             >
               Add To Cart
             </button>
-            <button
-              onClick={() => handleRemoveFromCart(item)} // Doesn't work in CartItem.jsx
-              className="add-to-cart-btn-item"
-            >
-              Remove from cart
-            </button>
+            <button className="add-to-cart-btn-item">Remove from cart</button>
           </div>
         </div>
       </div>
