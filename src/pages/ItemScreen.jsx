@@ -1,18 +1,16 @@
 import React, { useContext, useState } from "react";
 import { CartContext } from "../Components/context/CartContext";
 import { DataContext } from "../Components/context/DataContext";
-import { useHistory } from 'react-router-dom'
-import { v4 as uuidv4 } from 'uuid';
+import { useHistory } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 
 export default function ItemScreen(props) {
   const { fetched } = useContext(DataContext);
   const { cart, setCart } = useContext(CartContext);
-  const item = fetched.find((x) => x.id === props.match.params.id);
-  const history = useHistory()
+  const item = fetched.find((element) => element.id === props.match.params.id);
+  const history = useHistory();
 
   const [picture, setPicture] = useState(item.img[0].img);
-
-  console.log(cart);
 
   if (!item) {
     return <h1>Product does not exist</h1>;
@@ -24,13 +22,13 @@ export default function ItemScreen(props) {
     if (itemInCart) {
       alert("Item is already in the cart!");
     } else {
-      itemInCart= {
+      itemInCart = {
         ...item,
-        qty: 1
-      }
-      newCart.push(itemInCart)
+        qty: 1,
+      };
+      newCart.push(itemInCart);
     }
-    setCart(newCart)
+    setCart(newCart);
   };
 
   const handlePictureClick = (e) => {
@@ -52,7 +50,7 @@ export default function ItemScreen(props) {
 
   return (
     <div id="item-screen">
-      <p onClick={()=> history.push(`/${item.section}`)}>Back to results</p>
+      <p onClick={() => history.push(`/${item.section}`)}>Back to results</p>
       <div className="item-img-div">
         <div className="item-img">
           <img src={picture} alt="" />
