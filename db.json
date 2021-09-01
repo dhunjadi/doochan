@@ -5,6 +5,7 @@
         "description": "description 1",
         "price": 100,
         "section": "Art",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.vangoghgallery.com/img/starry_night_full.jpg"
             },
@@ -29,6 +30,7 @@
         "description": "description 2",
         "price": 200,
         "section": "Art",
+        "qty" : 0,
         "img": [{
                 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1200px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
             },
@@ -53,6 +55,7 @@
         "description": "description 3",
         "price": 300,
         "section": "Art",
+        "qty" : 0,
         "img": [{
                 "img": "https://i2.wp.com/see.news/wp-content/uploads/2021/02/edvard-munch-the-scream.jpg"
             },
@@ -77,6 +80,7 @@
         "description": "description 4",
         "price": 400,
         "section": "Art",
+        "qty" : 0,
         "img": [{
                 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg/1200px-Grant_Wood_-_American_Gothic_-_Google_Art_Project.jpg"
             },
@@ -101,6 +105,7 @@
         "description": "description 5",
         "price": 500,
         "section": "Art",
+        "qty" : 0,
         "img": [{
                 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/The_Night_Watch_-_HD.jpg/1200px-The_Night_Watch_-_HD.jpg"
             },
@@ -126,6 +131,7 @@
         "description": "description 6",
         "price": 600,
         "section": "Art",
+        "qty" : 0,
         "img": [{
                 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1200px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg"
             },
@@ -149,6 +155,7 @@
         "description": "description 1",
         "price": 100,
         "section": "ClothingAndShoes",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.asket.com/imgproxy/e:1/format:jpeg/width:1080/resize:fit/quality:80/plain/https://asket.centracdn.net/client/dynamic/images/2_00d6bb1f5b-asket_tee_white_cart_thumb-original.jpg@jpg"
             },
@@ -174,6 +181,7 @@
         "description": "description 2",
         "price": 200,
         "section": "ClothingAndShoes",
+        "qty" : 0,
         "img": [{
                 "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1584477049-best-jeans-4-1584477027.jpg"
             },
@@ -198,6 +206,7 @@
         "description": "description 3",
         "price": 300,
         "section": "ClothingAndShoes",
+        "qty" : 0,
         "img": [{
                 "img": "https://m.media-amazon.com/images/I/71oun0H72sL._AC_UL1500_.jpg"
             },
@@ -222,6 +231,7 @@
         "description": "description 4",
         "price": 400,
         "section": "ClothingAndShoes",
+        "qty" : 0,
         "img": [{
                 "img": "https://cf.shopee.ph/file/29ac0105eeea1ec7ffe98267e0195b78"
             },
@@ -247,6 +257,7 @@
         "description": "description 5",
         "price": 500,
         "section": "ClothingAndShoes",
+        "qty" : 0,
         "img": [{
                 "img": "https://martinvalen.com/13819/men-s-basic-sleeveless-t-shirt-in-red.jpg"
             },
@@ -271,6 +282,7 @@
         "description": "description 6",
         "price": 600,
         "section": "ClothingAndShoes",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.iciw.com/bilder/artiklar/ICIW-309.jpg"
             },
@@ -296,6 +308,7 @@
         "description": "description 1",
         "price": 100,
         "section": "HomeAndLiving",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.smow.com/pics/mi-001-000/midgard-federzug-tischleuchte-schwarz-01_zoom.jpg"
             },
@@ -320,6 +333,7 @@
         "description": "description 2",
         "price": 200,
         "section": "HomeAndLiving",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.boconcept.com/on/demandware.static/-/Sites-master-catalog/default/dwbdde3874/images/1320000/1323062.jpg"
             },
@@ -345,6 +359,7 @@
         "description": "description 3",
         "price": 300,
         "section": "HomeAndLiving",
+        "qty" : 0,
         "img": [{
                 "img": "https://cdn.shopify.com/s/files/1/0104/1524/3330/products/zoco-home-furnitures-furnitures-tables-round-dining-table-120cm-tab1013-11553664958530_1000x1000.png?v=1588204770"
             },
@@ -369,6 +384,7 @@
         "description": "description 4",
         "price": 400,
         "section": "HomeAndLiving",
+        "qty" : 0,
         "img": [{
                 "img": "https://loverthreads.com/wp-content/uploads/2021/02/81J5r9dANGL._SL1500_.jpg"
             },
@@ -394,6 +410,7 @@
         "description": "description 5",
         "price": 500,
         "section": "HomeAndLiving",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.ikea.com/cz/en/images/products/lill-net-curtains-1-pair-white__0887768_pe569661_s5.jpg"
             },
@@ -419,6 +436,7 @@
         "description": "description 6",
         "price": 600,
         "section": "HomeAndLiving",
+        "qty" : 0,
         "img": [{
                 "img": "https://cdn.shopify.com/s/files/1/2660/5202/products/xoir1j2ihw9b4bw2apj5_a6ba22e9-258d-435e-86c6-7fadbe115a84_1400x.jpg?v=1598896506"
             },
@@ -444,6 +462,7 @@
         "description": "description 1",
         "price": 100,
         "section": "Jewellery",
+        "qty" : 0,
         "img": [{
                 "img": "https://asset.swarovski.com/images/$size_1450/t_swa103/b_rgb:ffffff,c_scale,dpr_3.0,f_auto,w_500/5519330_png_var2/cocktail-watch--metal-bracelet--silver-tone--stainless-steel-swarovski-5519330.png"
             },
@@ -468,6 +487,7 @@
         "description": "description 2",
         "price": 200,
         "section": "Jewellery",
+        "qty" : 0,
         "img": [{
                 "img": "https://www.dmarge.com/wp-content/uploads/2021/03/best-mens-necklaces-miansai.jpg"
             },
@@ -492,6 +512,7 @@
         "description": "description 3",
         "price": 300,
         "section": "Jewellery",
+        "qty" : 0,
         "img": [{
                 "img": "https://n3.sdlcdn.com/imgs/j/n/r/Ratan-Bazaar-Silver-challa-Fashion-SDL703729938-2-38319.jpg"
             },
@@ -516,6 +537,7 @@
         "description": "description 4",
         "price": 400,
         "section": "Jewellery",
+        "qty" : 0,
         "img": [{
                 "img": "https://fleur-parfumerie.com/wp-content/uploads/2018/03/001.jpg"
             },
@@ -540,6 +562,7 @@
         "description": "description 5",
         "price": 500,
         "section": "Jewellery",
+        "qty" : 0,
         "img": [{
                 "img": "https://ae01.alicdn.com/kf/HTB1TqB1SXXXXXcmaXXXq6xXFXXXc/New-Style-pure-Gold-Color-Bracelets-Bangles-For-Girls-women-24k-GP-Unique-Design-bracelet-gold.jpg_Q90.jpg_.webp"
             },
@@ -564,6 +587,7 @@
         "description": "description 6",
         "price": 600,
         "section": "Jewellery",
+        "qty" : 0,
         "img": [{
                 "img": "https://cdn.shopify.com/s/files/1/0259/0713/products/platinum-diamond-rings-infinity-platinum-ring-with-diamonds-for-women-jl-pt-460-1.jpg?v=1533138215"
             },
@@ -588,6 +612,7 @@
         "description": "description 1",
         "price": 100,
         "section": "Toys",
+        "qty" : 0,
         "img": [{
                 "img": "https://i.ebayimg.com/00/s/MTA2MlgxNjAw/z/gBgAAOSwT7NeAf-3/$_57.JPG"
             },
@@ -612,6 +637,7 @@
         "description": "description 2",
         "price": 200,
         "section": "Toys",
+        "qty" : 0,
         "img": [{
                 "img": "https://m.media-amazon.com/images/I/71XLasbZjIL._AC_SL1500_.jpg"
             },
@@ -636,6 +662,7 @@
         "description": "description 3",
         "price": 300,
         "section": "Toys",
+        "qty" : 0,
         "img": [{
                 "img": "https://media.entertainmentearth.com/assets/images/5f9137046c86454f9451666cd241e354xl.jpg"
             },
@@ -660,6 +687,7 @@
         "description": "description 4",
         "price": 400,
         "section": "Toys",
+        "qty" : 0,
         "img": [{
                 "img": "https://m.media-amazon.com/images/I/815k5V8u7gL._AC_SL1500_.jpg"
             },
@@ -685,6 +713,7 @@
         "description": "description 5",
         "price": 500,
         "section": "Toys",
+        "qty" : 0,
         "img": [{
                 "img": "https://m.media-amazon.com/images/I/71d7v4yQAVS._AC_SL1500_.jpg"
             },
@@ -709,6 +738,7 @@
         "description": "description 6",
         "price": 600,
         "section": "Toys",
+        "qty" : 0,
         "img": [{
                 "img": "https://m.media-amazon.com/images/I/71LyEU7haQL._AC_SL1500_.jpg"
             },

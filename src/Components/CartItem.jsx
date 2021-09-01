@@ -1,28 +1,45 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "./context/CartContext";
 
 export default function CartItem({ cartItem }) {
+  const { img, title, description, price, id, qty } = cartItem;
+  const { cart, setCart, setTotal, quantity, setQuantity } = useContext(CartContext);
 
-  const { img, title, description, price, id } = cartItem;
-  const { cart, setCart } = useContext(CartContext);
-  const [quantity, setQuantity] = useState(1);
+
   const item = cartItem;
+  let totalPriceItem = price * qty;
+
+
+  useEffect(()=> {
+    let totalPrice = cart.map((element) => element.price * element.qty);
+    let total = totalPrice.reduce((sum, curr) => {
+      return sum + curr;
+    });
+    setTotal(total)
+  })
+
 
   const handleRemoveFromCart = (removeItem) => {
     setCart(cart.filter((element) => element.id !== removeItem.id));
   };
 
-  const handleAddOne = () => {
-    if (quantity < 9) {
+  const handleAddOne = (item) => {
+    if (item.qty < 9) {
       setQuantity((prevQuantity) => prevQuantity + 1);
-      
+      let itemInCart = cart.find((newItem) => item.title === newItem.title);
+      if (itemInCart) {
+        itemInCart.qty++;
+      }
     }
   };
 
-  const handleRemoveOne = () => {
-    if (quantity > 1) {
+  const handleRemoveOne = (item) => {
+    if (item.qty > 1) {
       setQuantity((prevQuantity) => prevQuantity - 1);
-      
+      let itemInCart = cart.find((newItem) => item.title === newItem.title);
+      if (itemInCart) {
+        itemInCart.qty--;
+      }
     }
   };
 
@@ -47,17 +64,26 @@ export default function CartItem({ cartItem }) {
         </div>
 
         <div className="cart-number-input-div">
-              <button className='minus-btn' onClick={handleRemoveOne}>-</button>
-              <span>{quantity}</span>
-              <button className='plus-btn' onClick={handleAddOne}>+</button>
-            </div>
+          <button className="minus-btn" onClick={()=> handleRemoveOne(item)}>
+            -
+          </button>
+          <span>{item.qty}</span>
+          <button className="plus-btn" onClick={() => handleAddOne(item)}>
+            +
+          </button>
+        </div>
 
         <div className="cart-item-price-total">
-          <span>${price * quantity}</span>
+          <span>${totalPriceItem}</span>
         </div>
 
         <div className="cart-remove-item-btn-div">
-          <button className='remove-btn' onClick={() => handleRemoveFromCart(item)}>Remove</button>
+          <button
+            className="remove-btn"
+            onClick={() => handleRemoveFromCart(item)}
+          >
+            Remove
+          </button>
         </div>
       </div>
       <hr />

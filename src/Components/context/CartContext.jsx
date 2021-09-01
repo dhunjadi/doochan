@@ -5,6 +5,8 @@ export const CartContext = createContext();
 export const CartContextProvider = ({children}) => {
 
     const [cart, setCart] = useState([])
+    const [total, setTotal] = useState(0)
+    const [quantity, setQuantity] = useState(1);
 
     useEffect(() => {
         const data = localStorage.getItem('my-items') 
@@ -19,7 +21,7 @@ export const CartContextProvider = ({children}) => {
 
 
     return(
-        <CartContext.Provider value={{ cart, setCart }}>
+        <CartContext.Provider value={{ cart, setCart, total, setTotal, quantity, setQuantity }}>
         {children}
         </CartContext.Provider>
     )

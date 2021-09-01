@@ -50,8 +50,8 @@ export default function ItemScreen(props) {
 
   return (
     <div id="item-screen">
-      <p onClick={() => history.push(`/${item.section}`)}>Back to results</p>
       <div className="item-img-div">
+      <h2 onClick={() => history.push(`/${item.section}`)}>Back to results</h2>
         <div className="item-img">
           <img src={picture} alt="" />
         </div>
@@ -68,7 +68,6 @@ export default function ItemScreen(props) {
             >
               Add To Cart
             </button>
-            <button className="add-to-cart-btn-item">Remove from cart</button>
           </div>
         </div>
       </div>
