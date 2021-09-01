@@ -19,6 +19,7 @@ export default function Cart() {
       <h1>Total: $</h1>
       {cart.length > 0 ? (
         <button
+          className='clear-cart-btn'
           onClick={() => {
             setCart([]);
           }}

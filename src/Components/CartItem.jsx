@@ -47,17 +47,17 @@ export default function CartItem({ cartItem }) {
         </div>
 
         <div className="cart-number-input-div">
-              <button onClick={handleRemoveOne}>-</button>
+              <button className='minus-btn' onClick={handleRemoveOne}>-</button>
               <span>{quantity}</span>
-              <button onClick={handleAddOne}>+</button>
+              <button className='plus-btn' onClick={handleAddOne}>+</button>
             </div>
 
         <div className="cart-item-price-total">
           <span>${price * quantity}</span>
         </div>
 
-        <div className="cart-remove-item-btn">
-          <button onClick={() => handleRemoveFromCart(item)}>Remove</button>
+        <div className="cart-remove-item-btn-div">
+          <button className='remove-btn' onClick={() => handleRemoveFromCart(item)}>Remove</button>
         </div>
       </div>
       <hr />
