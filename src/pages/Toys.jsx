@@ -15,7 +15,6 @@ export default function Toys() {
 
   return (
     <div id="toy">
-      <h1>Toys</h1>
       <div className="item-container">{filtered.map(createItem)}</div>
     </div>
   );

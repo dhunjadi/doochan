@@ -15,7 +15,6 @@ export default function Jewellery() {
 
   return (
     <div id="jewellery">
-      <h1>Jewellery</h1>
       <div className="item-container">{filtered.map(createItem)}</div>
     </div>
   );

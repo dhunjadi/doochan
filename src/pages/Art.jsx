@@ -15,7 +15,6 @@ export default function Art() {
 
   return (
     <div id="art">
-      <h1>Art</h1>
       <div className="item-container">{filtered.map(createItem)}</div>
     </div>
   );

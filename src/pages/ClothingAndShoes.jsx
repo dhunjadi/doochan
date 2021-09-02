@@ -15,7 +15,6 @@ export default function ClothingAndShoes() {
 
   return (
     <div id="clothes">
-      <h1>Clothing and Shoes</h1>
       <div className="item-container">{filtered.map(createItem)}</div>
     </div>
   );

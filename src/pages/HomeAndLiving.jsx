@@ -15,7 +15,6 @@ export default function HomeAndLiving() {
 
   return (
     <div id="home">
-      <h1>Home And Living</h1>
       <div className="item-container">{filtered.map(createItem)}</div>
     </div>
   );
