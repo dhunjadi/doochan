@@ -105,7 +105,7 @@ export default function CheckoutScreen() {
             </div>
           </div>
         </div>
-        <button className='pay-btn'>PAY ${total}</button>
+        <button className='pay-btn'>PAY ${total + tax}</button>
       </div>
     </div>
   );
