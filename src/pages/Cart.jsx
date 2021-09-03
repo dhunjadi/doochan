@@ -2,9 +2,11 @@ import React, { useContext } from "react";
 import { CartContext } from "../Components/context/CartContext";
 import { v4 as uuidv4 } from "uuid";
 import CartItem from "../Components/CartItem";
+import { useHistory } from 'react-router'
 
 export default function Cart() {
   const { cart, setCart, total, setTotal } = useContext(CartContext);
+  const history = useHistory()
   
 
   const displayCartItems = (cartItem) => {
@@ -33,6 +35,7 @@ export default function Cart() {
           Clear Cart
         </button>
       ) : null}
+      <button onClick={()=>{history.push(`/Checkout`)}} className='go-to-checkout-btn'>Proceed to Checkout</button>
       <div className="item-container">{cart.map(displayCartItems)}</div>
     </div>
   );

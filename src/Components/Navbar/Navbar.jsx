@@ -1,12 +1,12 @@
 import React, { useState, useContext } from "react";
 import menuList from "./MenuList";
 import { NavLink, useHistory } from "react-router-dom";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import { CartContext } from "../context/CartContext";
 
 export default function Navbar() {
   const [clicked, setClicked] = useState(false);
-  const { cart } = useContext(CartContext)
+  const { cart } = useContext(CartContext);
 
   const history = useHistory();
 
@@ -47,7 +47,9 @@ export default function Navbar() {
           history.push("/Cart");
         }}
         className="fas fa-shopping-cart"
-      >({cart.length})</i>
+      >
+        ({cart.length})
+      </i>
     </div>
   );
 }

@@ -2,9 +2,9 @@
   "items": [
     {
       "id": "1",
-      "title": "The Starry Night",
+      "title": "The Starry Night Replica",
       "description": "An oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh",
-      "price": 100,
+      "price": 949,
       "section": "Art",
       "qty": 0,
       "img": [
@@ -27,9 +27,9 @@
     },
     {
       "id": "2",
-      "title": "The Mona Lisa",
+      "title": "The Mona Lisa Replica",
       "description": "A half-length portrait painting by Italian artist Leonardo da Vinci",
-      "price": 200,
+      "price": 999,
       "section": "Art",
       "qty": 0,
       "img": [
@@ -52,9 +52,9 @@
     },
     {
       "id": "3",
-      "title": "The Scream",
+      "title": "The Scream Replica",
       "description": "An expressionistic construction based on Edvard Munch's actual experience of a scream piercing through nature while on a walk",
-      "price": 300,
+      "price": 749,
       "section": "Art",
       "qty": 0,
       "img": [
@@ -77,9 +77,9 @@
     },
     {
       "id": "4",
-      "title": "The American Gothic",
+      "title": "The American Gothic Replica",
       "description": "A 1930 painting by Grant Wood in the collection of the Art Institute of Chicago",
-      "price": 400,
+      "price": 449,
       "section": "Art",
       "qty": 0,
       "img": [
@@ -102,9 +102,9 @@
     },
     {
       "id": "5",
-      "title": "The Night Watch",
+      "title": "The Night Watch Replica",
       "description": "A group portrait of a company of civic guardsmen",
-      "price": 500,
+      "price": 499,
       "section": "Art",
       "qty": 0,
       "img": [
@@ -127,9 +127,9 @@
     },
     {
       "id": "6",
-      "title": "The Birth of Venus",
+      "title": "The Birth of Venus Replica",
       "description": "A painting by the Italian artist Sandro Botticelli depicting the goddess Venus arriving at the shore after her birth",
-      "price": 500,
+      "price": 549,
       "section": "Art",
       "qty": 0,
       "img": [

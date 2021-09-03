@@ -12,6 +12,8 @@ import Cart from "../pages/Cart";
 import ItemScreen from "../pages/ItemScreen";
 import { DataContextProvider } from "./context/DataContext";
 import { CartContextProvider } from "./context/CartContext";
+import CheckoutScreen from "../pages/CheckoutScreen";
+
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
               <Route path="/Toys" component={Toys} />
               <Route path="/item/:id" component={ItemScreen} />
               <Route path="/Cart" component={Cart} />
+              <Route path="/Checkout" component={CheckoutScreen} />
             </Switch>
           </Router>
         </div>
