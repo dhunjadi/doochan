@@ -87,6 +87,26 @@ export default function CheckoutScreen() {
           <span>${total + tax}</span>
         </div>
       </div>
+      <div className="payment-details">
+        <h1>Payment Details</h1>
+        <div className="card-info">
+          <p>Name on Card</p>
+          <input type="text" />
+          <p>Credit Card Number:</p>
+          <input type="tel" />
+          <div className="valid-cvv">
+            <div className="valid">
+              <p>Valid Through</p>
+              <input type="text" />
+            </div>
+            <div className="cvv">
+              <p>CVV</p>
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <button className='pay-btn'>PAY ${total}</button>
+      </div>
     </div>
   );
 }
