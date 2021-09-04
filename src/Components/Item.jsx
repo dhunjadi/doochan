@@ -11,14 +11,14 @@ export default function Item({ item }) {
           <img className="item-img" src={img[0].img} alt="" />
         </div>
         <div className="item-title">
-            <span>{title}</span>
+            <h3>{title}</h3>
         </div>
         <div className="item-description">
-          <span>{description}</span>
+          <p>{description}</p>
         </div>
         </Link>
         
-          <span className='item-price'>${price}</span>
+          <p className='item-price'>${price}</p>
         
     </div>
   );
