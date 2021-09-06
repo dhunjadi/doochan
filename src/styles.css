@@ -132,23 +132,16 @@ label{
   .home-jewellery,
   .home-toys {
     height: 80vh;
+    max-height: 30vh;
     width: 100%;
+    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-
-  .home-art,
-  .home-clothing,
-  .home-home,
-  .home-jewellery,
-  .home-toys {
-    max-height: 30vh;
     opacity: 30%;
-    background-position: center;
-    background-size: 100vw;
+
   }
 
   .home-art {
@@ -1412,7 +1405,7 @@ label{
     max-height: 45vh;
     opacity: 30%;
     background-position: center;
-    background-size: 100vw;
+    background-size: cover;
   }
 
   .home-art {
