@@ -49,21 +49,27 @@ export default function ItemScreen(props) {
   };
 
   return (
+    <>
+          <h2
+        className="back-to-results"
+        onClick={() => history.push(`/${item.section}`)}
+      >
+        Back to results
+      </h2>
     <div id="selected-item-screen">
+
       <div className="selected-item-img-div">
-        <h2 className='back-to-results' onClick={() => history.push(`/${item.section}`)}>
-          Back to results
-        </h2>
         <img className="selected-item-img" src={picture} alt="" />
-        <div className="selected-item-price">
-          <p>${item.price}</p>
+        <div className="more-pictures-div">
+          {item.img.map(createMorePictures)}
         </div>
-        <div className="selected-item-details">
+      </div>
+      <div className="selected-item-details">
+          <div className="selected-item-price">
+            <p>${item.price}</p>
+          </div>
           <p className="selected-item-title">{item.title}</p>
           <p className="selected-item-description">{item.description}</p>
-          <div className="more-pictures-div">
-            {item.img.map(createMorePictures)}
-          </div>
           <div className="buttons-div">
             <button
               onClick={() => handleAddToCart(item)}
@@ -73,7 +79,7 @@ export default function ItemScreen(props) {
             </button>
           </div>
         </div>
-      </div>
     </div>
+    </>
   );
 }
