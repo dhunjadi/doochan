@@ -958,6 +958,7 @@ label{
   /* CART PAGE */
 
   .cart-item-div {
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -1058,6 +1059,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     background-color: rgba(218, 0, 0, 1);
     padding: 12px;
     color: white;
@@ -1583,30 +1585,52 @@ label{
   /* CART PAGE */
 
   .cart-item-div {
+    width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
   }
 
+
   .cart-item-img {
+    grid-column: 1/2;
     max-width: 200px;
     max-height: 200px;
     margin: 20px;
   }
 
   .cart-item-details {
+    grid-column: 2/4;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
+  .cart-item-title {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+
+  .cart-item-description {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+  }
+
   .cart-item-price {
+    grid-column: 4/5;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .cart-number-input-div {
+    grid-column: 5/6;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .cart-number-input {
@@ -1615,13 +1639,10 @@ label{
   }
 
   .cart-item-price-total {
+    grid-column: 6/7;
     display: flex;
     align-items: center;
-  }
-
-  .cart-remove-item-btn {
-    display: flex;
-    align-items: center;
+    justify-content: center;
   }
 
   hr {
@@ -1655,6 +1676,11 @@ label{
   }
 
   .remove-btn {
+    grid-column: 7/8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     background-color: rgba(218, 0, 0, 1);
     padding: 12px;
     color: white;
@@ -1761,11 +1787,28 @@ label{
     justify-content: space-between;
   }
 
+  .item-info p{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .item-info span{
+    font-family: "Roboto", sans-serif;
+  }
+
   .delivery-info {
     border-radius: 10px;
     background-color: white;
     padding: 20px;
     margin: 20px;
+  }
+
+  .delivery-info h1{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .pair{
+    display: flex;
+    flex-direction: column;
   }
 
   .delivery-info input,
@@ -1798,6 +1841,7 @@ label{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-family: "Roboto", sans-serif;
   }
 
   .order-total {
@@ -1815,6 +1859,10 @@ label{
     background-color: white;
     padding: 20px;
     margin: 20px;
+  }
+
+  .payment-details h1{
+    font-family: "Montserrat", sans-serif;
   }
 
   .payment-details input {
@@ -1836,8 +1884,18 @@ label{
     margin: 20px 0;
   }
 
+  .valid{
+    display: flex;
+    flex-direction: column;
+  }
+
   .valid input {
     width: 50px;
+  }
+
+  .cvv{
+    display: flex;
+    flex-direction: column;
   }
 
   .cvv input {
