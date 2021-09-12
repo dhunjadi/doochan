@@ -13,7 +13,14 @@ export default function Navbar() {
   const createList = ({ url, title }) => {
     return (
       <li key={uuidv4()}>
-        <NavLink exact to={url} activeClassName="active">
+        <NavLink
+          exact
+          to={url}
+          activeClassName="active"
+          onClick={() => {
+            setClicked(!clicked);
+          }}
+        >
           {title}
         </NavLink>
       </li>
