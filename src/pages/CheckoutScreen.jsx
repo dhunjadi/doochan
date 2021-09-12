@@ -5,6 +5,8 @@ import { useHistory } from "react-router";
 
 export default function CheckoutScreen() {
   const [countryList, setCountryList] = useState([]);
+  const [creditCardNumber, setCreditCardNumber] = useState()
+  const [expiryDate, setExpiryDate] = useState()
   const [tax] = useState(5);
   const { cart, total } = useContext(CartContext);
   const history = useHistory();
@@ -22,6 +24,10 @@ export default function CheckoutScreen() {
   const showCountries = (country) => {
     return <option key={uuidv4()}>{country.name}</option>;
   };
+
+  const normalizeCardNumber = (value) =>{
+    setCreditCardNumber(value.replace(/\s/g, "").match(/.{1,4}/g)?.join(" ").substr(0, 19) || "")
+  }
 
   return (
     <>
@@ -113,17 +119,33 @@ export default function CheckoutScreen() {
           <h1>Payment Details</h1>
           <div className="card-info">
             <div className="pair">
-            <label>Name on Card</label>
-            <input type="text" />
+              <label>Name on Card</label>
+              <input type="text" />
             </div>
             <div className="pair">
-            <label>Credit Card Number:</label>
-            <input type="tel" />
+              <label htmlFor="cardNumber">Credit Card Number:</label>
+              <input
+                type="tel"
+                placeholder="0000 0000 0000 0000"
+                inputMode="numeric"
+                name="cardNumber"
+                id="cardNumber"
+                value={creditCardNumber}
+                onChange={(e)=>{
+                  const {value} = e.target
+                  e.target.value = normalizeCardNumber(value)
+                }}
+              />
             </div>
             <div className="valid-cvv">
               <div className="valid">
-                <label>Valid Through</label>
-                <input type="text" />
+                <label>Expiry Date</label>
+                <input 
+                type="tel" 
+                placeholder='MM/YY'
+                value={expiryDate}
+                onChange={(e)=>{setExpiryDate(e.target.value)}}
+                />
               </div>
               <div className="cvv">
                 <label>CVV</label>
