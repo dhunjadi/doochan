@@ -18,7 +18,7 @@ export default function Navbar() {
           to={url}
           activeClassName="active"
           onClick={() => {
-            setClicked(!clicked);
+            setClicked(false);
           }}
         >
           {title}
