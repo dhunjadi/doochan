@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from "uuid";
 export default function ItemScreen(props) {
   const { fetched } = useContext(DataContext);
   const { cart, setCart } = useContext(CartContext);
+  const [showModal, setShowModal] = useState(false)
   const item = fetched.find((element) => element.id === props.match.params.id);
   const history = useHistory();
 
@@ -20,7 +21,7 @@ export default function ItemScreen(props) {
     let newCart = [...cart];
     let itemInCart = newCart.find((newItem) => item.title === newItem.title);
     if (itemInCart) {
-      alert("Item is already in the cart!");
+      setShowModal(!showModal)
     } else {
       itemInCart = {
         ...item,
@@ -80,6 +81,11 @@ export default function ItemScreen(props) {
           </div>
         </div>
     </div>
+    {showModal ? 
+    <div className='modal'>
+      <h1>Item is already in the cart!</h1>
+      <button onClick={()=>setShowModal(!showModal)}>OK</button>
+      </div> : null}
     </>
   );
 }
