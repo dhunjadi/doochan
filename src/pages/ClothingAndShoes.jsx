@@ -12,7 +12,7 @@ export default function ClothingAndShoes() {
     return item.section === "ClothingAndShoes";
   });
 
-  const itemsPerPage = 6;
+  const itemsPerPage = 3;
   const pagesVisited = pageNumber * itemsPerPage;
 
   const displayItems = filtered

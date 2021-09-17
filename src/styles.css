@@ -292,7 +292,7 @@ label {
   .pagination-container a {
     padding: 10px;
     margin: 8px;
-    border: 2px solid white;
+    border: 2px solid #0187ff;
     border-radius: 4px;
     color: #0187ff;
     cursor: pointer;
@@ -301,12 +301,12 @@ label {
 
   .pagination-container a:hover {
     color: #0187ff;
-    background-color: white;
+    background-color: rgba(1, 135, 255, 0.3);
   }
 
   .pagination-active a {
-    color: #0187ff;
-    background-color: white;
+    color: white;
+    background-color: #0187ff;
   }
 
   /* SELECTED ITEM SCREEN */
@@ -940,39 +940,39 @@ label {
     font-family: "Roboto", sans-serif;
   }
 
-  /* PAGINATION CONTAINER */
+ /* PAGINATION CONTAINER */
 
-  .pagination-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0;
-    width: 100%;
-    height: 40px;
-    list-style: none;
-    font-weight: 700;
-  }
+ .pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  font-weight: 700;
+}
 
-  .pagination-container a {
-    padding: 10px;
-    margin: 8px;
-    border: 2px solid white;
-    border-radius: 4px;
-    color: #0187ff;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
+.pagination-container a {
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid #0187ff;
+  border-radius: 4px;
+  color: #0187ff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 
-  .pagination-container a:hover {
-    color: #0187ff;
-    background-color: white;
-  }
+.pagination-container a:hover {
+  color: #0187ff;
+  background-color: rgba(1, 135, 255, 0.3);
+}
 
-  .pagination-active a {
-    color: #0187ff;
-    background-color: white;
-  }
+.pagination-active a {
+  color: white;
+  background-color: #0187ff;
+}
 
   /* SELECTED ITEM SCREEN */
 
@@ -1609,39 +1609,39 @@ label {
     font-family: "Roboto", sans-serif;
   }
 
-  /* PAGINATION CONTAINER */
+ /* PAGINATION CONTAINER */
 
-  .pagination-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0;
-    width: 100%;
-    height: 40px;
-    list-style: none;
-    font-weight: 700;
-  }
+ .pagination-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+  width: 100%;
+  height: 40px;
+  list-style: none;
+  font-weight: 700;
+}
 
-  .pagination-container a {
-    padding: 10px;
-    margin: 8px;
-    border: 2px solid white;
-    border-radius: 4px;
-    color: #0187ff;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-  }
+.pagination-container a {
+  padding: 10px;
+  margin: 8px;
+  border: 2px solid #0187ff;
+  border-radius: 4px;
+  color: #0187ff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 
-  .pagination-container a:hover {
-    color: #0187ff;
-    background-color: white;
-  }
+.pagination-container a:hover {
+  color: #0187ff;
+  background-color: rgba(1, 135, 255, 0.3);
+}
 
-  .pagination-active a {
-    color: #0187ff;
-    background-color: white;
-  }
+.pagination-active a {
+  color: white;
+  background-color: #0187ff;
+}
 
   /* SELECTED ITEM SCREEN */
 

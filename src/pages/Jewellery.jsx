@@ -12,7 +12,7 @@ export default function Jewellery() {
     return item.section === "Jewellery";
   });
 
-  const itemsPerPage = 6;
+  const itemsPerPage = 3;
   const pagesVisited = pageNumber * itemsPerPage;
 
   const displayItems = filtered
