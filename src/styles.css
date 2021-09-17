@@ -27,22 +27,26 @@ a {
   cursor: pointer;
 }
 
-button{
+button {
   font-family: "Roboto", sans-serif;
 }
 
-label{
+label {
   font-family: "Roboto", sans-serif;
 }
 
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 25px;
   background: white;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.2));
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
   backdrop-filter: blur(5px);
   width: 50%;
   height: 50%;
@@ -51,10 +55,10 @@ label{
   align-items: center;
   flex-direction: column;
   color: #0187ff;
-  padding: 20px
+  padding: 20px;
 }
 
-.modal button{
+.modal button {
   background-color: #0187ff;
   padding: 12px;
   color: white;
@@ -142,7 +146,7 @@ label{
     margin: auto;
   }
 
-  .burger-menu  {
+  .burger-menu {
     color: white;
     display: flex;
     justify-content: center;
@@ -182,7 +186,6 @@ label{
     justify-content: center;
     align-items: center;
     opacity: 30%;
-
   }
 
   .home-art {
@@ -270,6 +273,40 @@ label{
   .item-price {
     margin-right: auto;
     font-family: "Roboto", sans-serif;
+  }
+
+  /* PAGINATION CONTAINER */
+
+  .pagination-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    font-weight: 700;
+  }
+
+  .pagination-container a {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: #0187ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .pagination-container a:hover {
+    color: #0187ff;
+    background-color: white;
+  }
+
+  .pagination-active a {
+    color: #0187ff;
+    background-color: white;
   }
 
   /* SELECTED ITEM SCREEN */
@@ -565,11 +602,11 @@ label{
     padding: 0 10px;
   }
 
-  .item-info p{
+  .item-info p {
     font-family: "Montserrat", sans-serif;
   }
 
-  .item-info span{
+  .item-info span {
     font-family: "Roboto", sans-serif;
   }
 
@@ -580,15 +617,14 @@ label{
     margin: 20px;
   }
 
-  .delivery-info h1{
+  .delivery-info h1 {
     font-family: "Montserrat", sans-serif;
   }
 
-  .pair{
+  .pair {
     display: flex;
     flex-direction: column;
   }
-
 
   .delivery-info input,
   .delivery-info select {
@@ -611,7 +647,7 @@ label{
     margin: 20px;
   }
 
-  .order-summary h1{
+  .order-summary h1 {
     font-family: "Montserrat", sans-serif;
   }
 
@@ -644,7 +680,7 @@ label{
     margin: 20px;
   }
 
-  .payment-details h1{
+  .payment-details h1 {
     font-family: "Montserrat", sans-serif;
   }
 
@@ -663,11 +699,11 @@ label{
   .valid-cvv {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 20px 0;
   }
 
-  .valid{
+  .valid {
     display: flex;
     flex-direction: column;
   }
@@ -676,12 +712,12 @@ label{
     width: 50px;
   }
 
-  .cvv{
+  .cvv {
     display: flex;
     flex-direction: column;
   }
 
-  .cvv input{
+  .cvv input {
     width: 50px;
   }
 
@@ -779,7 +815,7 @@ label{
     margin: auto;
   }
 
-  .burger-menu  {
+  .burger-menu {
     color: white;
     display: flex;
     justify-content: center;
@@ -904,6 +940,40 @@ label{
     font-family: "Roboto", sans-serif;
   }
 
+  /* PAGINATION CONTAINER */
+
+  .pagination-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    font-weight: 700;
+  }
+
+  .pagination-container a {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: #0187ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .pagination-container a:hover {
+    color: #0187ff;
+    background-color: white;
+  }
+
+  .pagination-active a {
+    color: #0187ff;
+    background-color: white;
+  }
+
   /* SELECTED ITEM SCREEN */
 
   #selected-item-screen {
@@ -920,7 +990,7 @@ label{
     color: #0187ff;
   }
 
-  .selected-item-img-div{
+  .selected-item-img-div {
     display: flex;
     flex-direction: column;
   }
@@ -1200,11 +1270,11 @@ label{
     justify-content: space-between;
   }
 
-  .item-info p{
+  .item-info p {
     font-family: "Montserrat", sans-serif;
   }
 
-  .item-info span{
+  .item-info span {
     font-family: "Roboto", sans-serif;
   }
 
@@ -1215,11 +1285,11 @@ label{
     margin: 20px;
   }
 
-  .delivery-info h1{
+  .delivery-info h1 {
     font-family: "Montserrat", sans-serif;
   }
 
-  .pair{
+  .pair {
     display: flex;
     flex-direction: column;
   }
@@ -1274,7 +1344,7 @@ label{
     margin: 20px;
   }
 
-  .payment-details h1{
+  .payment-details h1 {
     font-family: "Montserrat", sans-serif;
   }
 
@@ -1297,7 +1367,7 @@ label{
     margin: 20px 0;
   }
 
-  .valid{
+  .valid {
     display: flex;
     flex-direction: column;
   }
@@ -1306,7 +1376,7 @@ label{
     width: 50px;
   }
 
-  .cvv{
+  .cvv {
     display: flex;
     flex-direction: column;
   }
@@ -1539,6 +1609,40 @@ label{
     font-family: "Roboto", sans-serif;
   }
 
+  /* PAGINATION CONTAINER */
+
+  .pagination-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
+    height: 40px;
+    list-style: none;
+    font-weight: 700;
+  }
+
+  .pagination-container a {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid white;
+    border-radius: 4px;
+    color: #0187ff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .pagination-container a:hover {
+    color: #0187ff;
+    background-color: white;
+  }
+
+  .pagination-active a {
+    color: #0187ff;
+    background-color: white;
+  }
+
   /* SELECTED ITEM SCREEN */
 
   #selected-item-screen {
@@ -1555,7 +1659,7 @@ label{
     color: #0187ff;
   }
 
-  .selected-item-img-div{
+  .selected-item-img-div {
     display: flex;
     flex-direction: column;
   }
@@ -1635,9 +1739,8 @@ label{
   .cart-item-div {
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;  
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
 
   .cart-item-img {
     grid-column: 1/2;
@@ -1835,11 +1938,11 @@ label{
     justify-content: space-between;
   }
 
-  .item-info p{
+  .item-info p {
     font-family: "Montserrat", sans-serif;
   }
 
-  .item-info span{
+  .item-info span {
     font-family: "Roboto", sans-serif;
   }
 
@@ -1850,11 +1953,11 @@ label{
     margin: 20px;
   }
 
-  .delivery-info h1{
+  .delivery-info h1 {
     font-family: "Montserrat", sans-serif;
   }
 
-  .pair{
+  .pair {
     display: flex;
     flex-direction: column;
   }
@@ -1909,7 +2012,7 @@ label{
     margin: 20px;
   }
 
-  .payment-details h1{
+  .payment-details h1 {
     font-family: "Montserrat", sans-serif;
   }
 
@@ -1932,7 +2035,7 @@ label{
     margin: 20px 0;
   }
 
-  .valid{
+  .valid {
     display: flex;
     flex-direction: column;
   }
@@ -1941,7 +2044,7 @@ label{
     width: 50px;
   }
 
-  .cvv{
+  .cvv {
     display: flex;
     flex-direction: column;
   }
