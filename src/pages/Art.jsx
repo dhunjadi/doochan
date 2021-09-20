@@ -12,7 +12,7 @@ export default function Art() {
     return item.section === "Art";
   });
 
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const pagesVisited = pageNumber * itemsPerPage;
 
   const displayItems = filtered
