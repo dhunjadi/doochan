@@ -74,7 +74,7 @@ export default function CartItem({ cartItem }) {
         </div>
 
         <div className="cart-item-price-total">
-          <span>${totalPriceItem}</span>
+          <span>${totalPriceItem.toFixed(2)}</span>
         </div>
 
         <div className="cart-remove-item-btn-div">

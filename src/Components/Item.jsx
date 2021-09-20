@@ -18,7 +18,7 @@ export default function Item({ item }) {
         </div>
         </Link>
         
-          <p className='item-price'>${price}</p>
+          <p className='item-price'>${Number(price)}</p>
         
     </div>
   );

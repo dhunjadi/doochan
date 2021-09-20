@@ -67,7 +67,7 @@ export default function ItemScreen(props) {
       </div>
       <div className="selected-item-details">
           <div className="selected-item-price">
-            <p>${item.price}</p>
+            <p>${Number(item.price)}</p>
           </div>
           <p className="selected-item-title">{item.title}</p>
           <p className="selected-item-description">{item.description}</p>

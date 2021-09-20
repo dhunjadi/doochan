@@ -18,7 +18,7 @@ export default function Cart() {
 
   return cart.length > 0 ? (
     <div>
-      <h1 className="cart-total">Total: ${total}</h1>
+      <h1 className="cart-total">Total: ${total.toFixed(2)}</h1>
       <div className="cart-btns-div">
         <button
           className="clear-cart-btn"

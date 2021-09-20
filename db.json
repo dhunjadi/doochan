@@ -4,7 +4,7 @@
       "id": "1",
       "title": "The Starry Night Replica",
       "description": "An oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh",
-      "price": 949,
+      "price": "949.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -29,7 +29,7 @@
       "id": "2",
       "title": "The Mona Lisa Replica",
       "description": "A half-length portrait painting by Italian artist Leonardo da Vinci",
-      "price": 999,
+      "price": "999.59",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -54,7 +54,7 @@
       "id": "3",
       "title": "The Scream Replica",
       "description": "An expressionistic construction based on Edvard Munch's actual experience of a scream piercing through nature while on a walk",
-      "price": 749,
+      "price": "749.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -79,7 +79,7 @@
       "id": "4",
       "title": "The American Gothic Replica",
       "description": "A 1930 painting by Grant Wood in the collection of the Art Institute of Chicago",
-      "price": 449,
+      "price": "449.79",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -104,7 +104,7 @@
       "id": "5",
       "title": "The Night Watch Replica",
       "description": "A group portrait of a company of civic guardsmen",
-      "price": 499,
+      "price": "499.89",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -129,7 +129,7 @@
       "id": "6",
       "title": "The Birth of Venus Replica",
       "description": "A painting by the Italian artist Sandro Botticelli depicting the goddess Venus arriving at the shore after her birth",
-      "price": 549,
+      "price": "549.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -154,7 +154,7 @@
       "id": "7",
       "title": "T-shirt",
       "description": "Basic white T-shirt",
-      "price": 10,
+      "price": "9.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -180,7 +180,7 @@
       "id": "8",
       "title": "Jeans",
       "description": "Slim tapered dark navy jeans",
-      "price": 20,
+      "price": "19.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -205,7 +205,7 @@
       "id": "9",
       "title": "Dress Shirt",
       "description": "Black button-down dress shirt",
-      "price": 90,
+      "price": "89.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -230,7 +230,7 @@
       "id": "10",
       "title": "Polo Shirt",
       "description": "Navy blue polo shirt",
-      "price": 40,
+      "price": "39.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -255,7 +255,7 @@
       "id": "11",
       "title": "Sleeveless Shirt",
       "description": "Training sleeveless shirt",
-      "price": 13,
+      "price": "12.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -280,7 +280,7 @@
       "id": "12",
       "title": "Shorts",
       "description": "Black sweat shorts",
-      "price": 26,
+      "price": "25.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -305,7 +305,7 @@
       "id": "13",
       "title": "Desk Lamp",
       "description": "Black desk lamp",
-      "price": 15,
+      "price": "14.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -330,7 +330,7 @@
       "id": "14",
       "title": "Sofa",
       "description": "Modern leather sofa couch with wood base",
-      "price": 400,
+      "price": "399.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -356,7 +356,7 @@
       "id": "15",
       "title": "Round Table",
       "description": "Wooden dining table in light oak",
-      "price": 112,
+      "price": "99.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -381,7 +381,7 @@
       "id": "16",
       "title": "Chair",
       "description": "Home decor wooden chair",
-      "price": 65,
+      "price": "64.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -406,7 +406,7 @@
       "id": "17",
       "title": "Curtains",
       "description": "Basic room darkening curtains",
-      "price": 30,
+      "price": "29.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -432,7 +432,7 @@
       "id": "18",
       "title": "Bed",
       "description": "Upholstered Platform Bed",
-      "price": 329,
+      "price": "329.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -457,7 +457,7 @@
       "id": "19",
       "title": "Men's Bracelet",
       "description": "Chain link watch bracelet",
-      "price": 15,
+      "price": "14.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -482,7 +482,7 @@
       "id": "20",
       "title": "Men's Necklace",
       "description": "Men's pendant necklace",
-      "price": 49,
+      "price": "49.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -507,7 +507,7 @@
       "id": "21",
       "title": "Men's Ring",
       "description": "Sterling silver pinky ring",
-      "price": 9,
+      "price": "8.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -532,7 +532,7 @@
       "id": "22",
       "title": "Women's necklace",
       "description": "Vintage inspired cord necklace with pendant in silver",
-      "price": 49,
+      "price": "49.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -557,7 +557,7 @@
       "id": "23",
       "title": "Women's Bracelet",
       "description": "Chainn bracelet in gold",
-      "price": 15,
+      "price": "14.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -582,7 +582,7 @@
       "id": "24",
       "title": "Women's Ring",
       "description": "Hammered circle ring in sterling silver ",
-      "price": 9,
+      "price": "9.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -607,7 +607,7 @@
       "id": "25",
       "title": "Toy Car",
       "description": "Plastic toy car",
-      "price": 20,
+      "price": "19.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -632,7 +632,7 @@
       "id": "26",
       "title": "Toy Truck",
       "description": "Plastic toy truck",
-      "price": 20,
+      "price": "19.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -657,7 +657,7 @@
       "id": "27",
       "title": "Superman Action Figure",
       "description": "Plastic 12-inch Superman action figure",
-      "price": 12,
+      "price": "11.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -682,7 +682,7 @@
       "id": "28",
       "title": "Spiderman Action Figure",
       "description": "Spiderman Marvel hero series 12-inch action figure",
-      "price": 10,
+      "price": "9.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -707,7 +707,7 @@
       "id": "29",
       "title": "Batman Action Figure",
       "description": "DC comics Batman 12-inch action figure 5",
-      "price": 10,
+      "price": "9.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -732,7 +732,7 @@
       "id": "30",
       "title": "Wolverine Action Figure",
       "description": "Marvel legends series X-men Wolverine action figure",
-      "price": 25,
+      "price": "24.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -757,7 +757,7 @@
       "id": "31",
       "title": "Statue of Liberty Replica",
       "description": "The Statue of Liberty is one of the most recognizable statues in the United States. It is often seen as a symbol of freedom and justice",
-      "price": 249,
+      "price": "249.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -782,7 +782,7 @@
       "id": "32",
       "title": "Christ the Redeemer Replica",
       "description": "Christ the Redeemer is a statue in Rio de Janeiro, Brazil that was built as a symbol of Brazilian Christianity",
-      "price": 269,
+      "price": "269.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -807,7 +807,7 @@
       "id": "33",
       "title": "Maiden With a Seagull Replica",
       "description": "The statue of Maiden with the seagull is a symbol, not only of Opatija, but the entire Kvarner region",
-      "price": 279,
+      "price": "279.89",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -832,7 +832,7 @@
       "id": "34",
       "title": "Venus de Milo Replica",
       "description": "The Venus de Milo is an ancient Greek sculpture from the Hellenistic period, depicting a Greek goddess.",
-      "price": 289,
+      "price": "289.95",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -857,7 +857,7 @@
       "id": "35",
       "title": "Spring Temple Buddha Replica",
       "description": "The Spring Temple Buddha is a colossal statue depicting Vairocana Buddha located in the Zhaocun township of Lushan County, Henan, China",
-      "price": 299,
+      "price": "299.95",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -882,7 +882,7 @@
       "id": "36",
       "title": "Augustus of Primaporta Replica",
       "description": "Augustus of Primaporta Replica is a portrait statue of Augustus Caesar, the first emperor of the Roman Empire",
-      "price": 309,
+      "price": "309.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -907,7 +907,7 @@
       "id": "37",
       "title": "Discobolus Replica",
       "description": "The Discobolus of Myron is a Greek sculpture completed at the start of the Classical period at around 460–450 BC.",
-      "price": 255,
+      "price": "255.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -932,7 +932,7 @@
       "id": "38",
       "title": "Peplos Kore Replica",
       "description": "The Peplos Kore is a statue of a girl and one of the most well-known examples of Archaic Greek art",
-      "price": 229,
+      "price": "229.99",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -957,7 +957,7 @@
       "id": "39",
       "title": "Little Dancer of Fourteen Years",
       "description": "The Little Fourteen-Year-Old Dancer is a sculpture begun c. 1880 by Edgar Degas of a young student of the Paris Opera Ballet dance school, a Belgian named Marie van Goethem",
-      "price": 259,
+      "price": "259.95",
       "section": "Art",
       "qty": 0,
       "img": [
@@ -982,7 +982,7 @@
       "id": "40",
       "title": "Chelsea Boots",
       "description": "High quality chelsea boots",
-      "price": 65,
+      "price": "65.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1007,7 +1007,7 @@
       "id": "41",
       "title": "Chukka Boots",
       "description": "High quality chukka boots",
-      "price": 205,
+      "price": "205.79",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1032,7 +1032,7 @@
       "id": "42",
       "title": "Uggs",
       "description": "Uggs boots",
-      "price": 45,
+      "price": "45.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1057,7 +1057,7 @@
       "id": "43",
       "title": "Cowboy Boots",
       "description": "Leather cowboy boots",
-      "price": 135,
+      "price": "135.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1082,7 +1082,7 @@
       "id": "44",
       "title": "Timberland Boots",
       "description": "High quality Timberland boots",
-      "price": 249,
+      "price": "249.49",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1107,7 +1107,7 @@
       "id": "45",
       "title": "Desert Boots",
       "description": "High quality desert boots",
-      "price": 259,
+      "price": "259.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1132,7 +1132,7 @@
       "id": "46",
       "title": "Men's Dress Shoes",
       "description": "Leather men's dress shoes",
-      "price": 99,
+      "price": "99.95",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1157,7 +1157,7 @@
       "id": "47",
       "title": "Adidas Shoes",
       "description": "High quality Adidas shoes",
-      "price": 79,
+      "price": "79.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1182,7 +1182,7 @@
       "id": "48",
       "title": "Nike Shoes",
       "description": "High quality Nike shoes",
-      "price": 79,
+      "price": "79.99",
       "section": "ClothingAndShoes",
       "qty": 0,
       "img": [
@@ -1207,7 +1207,7 @@
       "id": "49",
       "title": "Desk",
       "description": "Wooden desk",
-      "price": 29,
+      "price": "29.95",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1232,7 +1232,7 @@
       "id": "50",
       "title": "Picture Frame",
       "description": "Wooden picture frame",
-      "price": 19,
+      "price": "19.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1257,7 +1257,7 @@
       "id": "51",
       "title": "Pillow",
       "description": "A comfortable pillow",
-      "price": 25,
+      "price": "24.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1282,7 +1282,7 @@
       "id": "52",
       "title": "Wooden door",
       "description": "A wooden door",
-      "price": 65,
+      "price": "64.95",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1307,7 +1307,7 @@
       "id": "53",
       "title": "Vase",
       "description": "High quality vase",
-      "price": 19,
+      "price": "19.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1332,7 +1332,7 @@
       "id": "54",
       "title": "Flowers",
       "description": "Colorful flowers",
-      "price": 15,
+      "price": "14.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1357,7 +1357,7 @@
       "id": "55",
       "title": "Fridge",
       "description": "Energy efficient fridge",
-      "price": 359,
+      "price": "359.95",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1382,7 +1382,7 @@
       "id": "56",
       "title": "Flat TV",
       "description": "Energy efficient flat TV",
-      "price": 239,
+      "price": "239.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1407,7 +1407,7 @@
       "id": "57",
       "title": "Radio Player",
       "description": "Radio player with high quality sound",
-      "price": 55,
+      "price": "55.99",
       "section": "HomeAndLiving",
       "qty": 0,
       "img": [
@@ -1432,7 +1432,7 @@
       "id": "58",
       "title": "Earrings",
       "description": "High quality earrings",
-      "price": 29,
+      "price": "29.95",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1457,7 +1457,7 @@
       "id": "59",
       "title": "Tie",
       "description": "High quality tie",
-      "price": 35,
+      "price": "34.75",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1482,7 +1482,7 @@
       "id": "60",
       "title": "Watch",
       "description": "Stylish watch",
-      "price": 25,
+      "price": "24.95",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1507,7 +1507,7 @@
       "id": "61",
       "title": "Brooch",
       "description": "High quality brooch",
-      "price": 29,
+      "price": "29.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1532,7 +1532,7 @@
       "id": "62",
       "title": "Tiara",
       "description": "High quality tiara",
-      "price": 45,
+      "price": "44.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1557,7 +1557,7 @@
       "id": "63",
       "title": "Hairpin",
       "description": "High quality hairpin",
-      "price": 25,
+      "price": "24.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1582,7 +1582,7 @@
       "id": "64",
       "title": "Cufflink",
       "description": "High quality cufflink",
-      "price": 19,
+      "price": "19.99",
       "section": "Jewellery",
       "qty": 0,
       "img": [
@@ -1607,7 +1607,7 @@
       "id": "65",
       "title": "Teddy bear",
       "description": "Fluffy teddy bear",
-      "price": 25,
+      "price": "24.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -1632,7 +1632,7 @@
       "id": "66",
       "title": "Toy Castle",
       "description": "High quality toy castle",
-      "price": 99,
+      "price": "99.95",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -1657,7 +1657,7 @@
       "id": "67",
       "title": "Hot Wheels Car",
       "description": "High quality Hot Wheels car",
-      "price": 25,
+      "price": "24.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -1682,7 +1682,7 @@
       "id": "68",
       "title": "Pokeball",
       "description": "High quality pokeball",
-      "price": 25,
+      "price": "24.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -1707,7 +1707,7 @@
       "id": "69",
       "title": "Yu-Gi-Oh Duel Disk",
       "description": "High quality Yu-Gi-Oh duel disk",
-      "price": 65,
+      "price": "64.99",
       "section": "Toys",
       "qty": 0,
       "img": [
@@ -1732,7 +1732,7 @@
       "id": "70",
       "title": "Goku Action Figure",
       "description": "High quality Goku action figure",
-      "price": 55,
+      "price": "54.99",
       "section": "Toys",
       "qty": 0,
       "img": [
