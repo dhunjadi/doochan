@@ -5,16 +5,13 @@ import CartItem from "../Components/CartItem";
 import { useHistory } from "react-router";
 
 export default function Cart() {
-  const { cart, setCart, total, setTotal } = useContext(CartContext);
+  const { cart, setCart, total } = useContext(CartContext);
   const history = useHistory();
 
-  const displayCartItems = (cartItem) => {
+  const displayCartItems = cart.map(cartItem => {
     return <CartItem key={uuidv4()} cartItem={cartItem} />;
-  };
+  })
 
-  if (cart.length === 0) {
-    setTotal(0);
-  }
 
   return cart.length > 0 ? (
     <div>
@@ -24,7 +21,6 @@ export default function Cart() {
           className="clear-cart-btn"
           onClick={() => {
             setCart([]);
-            setTotal(0);
           }}
         >
           Clear Cart
@@ -39,7 +35,7 @@ export default function Cart() {
         </button>
       </div>
 
-      <div className="item-container">{cart.map(displayCartItems)}</div>
+      <div className="item-container">{displayCartItems}</div>
     </div>
   ) : (
     <h1>Your cart is empty</h1>

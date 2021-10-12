@@ -5,16 +5,18 @@ import { v4 as uuidv4 } from "uuid";
 import ReactPaginate from "react-paginate";
 
 export default function Art() {
-  const { fetched } = useContext(DataContext);
-  const [pageNumber, setPageNumber] = useState(0);
+  const { data } = useContext(DataContext);
+  const [pageNumber, setPageNumber] = useState(0); // Pagination state
 
-  const filtered = fetched.filter((item) => {
+  // Filtering items from Art section
+  const filtered = data.filter((item) => {
     return item.section === "Art";
   });
 
   const itemsPerPage = 6;
   const pagesVisited = pageNumber * itemsPerPage;
 
+  // Displaying 6 items per page
   const displayItems = filtered
     .slice(pagesVisited, pagesVisited + itemsPerPage)
     .map((item) => {
@@ -29,17 +31,17 @@ export default function Art() {
   return (
     <div id="art">
       <div className="item-container">{displayItems}</div>
-      <ReactPaginate 
-          previousLabel={"<"}
-          nextLabel={">"}
-          pageCount={pageCount}
-          onPageChange={handlePageChange}
-          containerClassName={"pagination-container"}
-          previousLinkClassName={"previous-btn"}
-          nextLinkClassName={"next-btn"}
-          disabledClassName={"pagination-disabled"}
-          activeClassName={"pagination-active"}
-        />
+      <ReactPaginate
+        previousLabel={"<"}
+        nextLabel={">"}
+        pageCount={pageCount}
+        onPageChange={handlePageChange}
+        containerClassName={"pagination-container"}
+        previousLinkClassName={"previous-btn"}
+        nextLinkClassName={"next-btn"}
+        disabledClassName={"pagination-disabled"}
+        activeClassName={"pagination-active"}
+      />
     </div>
   );
 }

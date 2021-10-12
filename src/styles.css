@@ -653,7 +653,7 @@ label {
 
   .item-summary,
   .subtotal,
-  .tax,
+  .delivery-price,
   .order-total {
     width: 300px;
     display: flex;
@@ -1317,7 +1317,7 @@ label {
 
   .item-summary,
   .subtotal,
-  .tax,
+  .delivery-price,
   .order-total {
     width: 300px;
     display: flex;

@@ -1,29 +1,14 @@
-import { createContext, useState, useEffect } from 'react'
+import { createContext, useState } from "react";
+import itemList from "../../itemList";
 
 export const DataContext = createContext();
 
-
 export const DataContextProvider = ({ children }) => {
-
-  const [fetched, setFetched] = useState(null)
-
-  useEffect(() => {
-    fetch('http://localhost:8000/items')
-      .then(res => {
-        return res.json()
-      })
-      .then(data => {
-        setFetched(data)
-      })
-  }, [])
+  const [ data ] = useState(itemList);
 
   return (
-    fetched ?
-      <DataContext.Provider value={{ fetched, setFetched }}>
-        {children}
-      </DataContext.Provider> : null
-  )
-}
-
-
-
+    <DataContext.Provider value={{ data }}>
+      {children}
+    </DataContext.Provider>
+  );
+};

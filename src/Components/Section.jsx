@@ -1,15 +1,20 @@
-import React from 'react'
-import { useHistory } from 'react-router'
+import React from "react";
+import { useHistory } from "react-router";
 
-export default function Section({section}) {
-const history = useHistory()
+export default function Section({ section }) {
+  const { listDivClass, route, headlineDiv, headlineClass, headline } = section;
+  const history = useHistory();
 
-    return (
-        <div className={section.listDivClass} onClick={()=>{history.push(`/${section.route}`)}}>
-            <div className={section.headlineDiv}>
-                <h1 className={section.headlineClass}>{section.headline}</h1>
-            </div>
-        </div>
-    )
+  return (
+    <div
+      className={listDivClass}
+      onClick={() => {
+        history.push(`/${route}`);
+      }}
+    >
+      <div className={headlineDiv}>
+        <h1 className={headlineClass}>{headline}</h1>
+      </div>
+    </div>
+  );
 }
-

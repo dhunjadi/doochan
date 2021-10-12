@@ -5,38 +5,38 @@ export default function CartItem({ cartItem }) {
   const { img, title, description, price, id, qty } = cartItem;
   const { cart, setCart, setTotal, setQuantity } = useContext(CartContext);
 
-
-  const item = cartItem;
   let totalPriceItem = price * qty;
 
-
-  useEffect(()=> {
+  // Calculating total price for for all items in cart combined
+  useEffect(() => {
     let totalPrice = cart.map((element) => element.price * element.qty);
     let total = totalPrice.reduce((sum, curr) => {
       return sum + curr;
     });
-    setTotal(total)
-  })
+    setTotal(total);
+  });
 
-
+  // Removing item from cart
   const handleRemoveFromCart = (removeItem) => {
     setCart(cart.filter((element) => element.id !== removeItem.id));
   };
 
-  const handleAddOne = (item) => {
-    if (item.qty < 9) {
+  // Adding one ( + sign )
+  const handleAddOne = (cartItem) => {
+    if (cartItem.qty < 9) {
       setQuantity((prevQuantity) => prevQuantity + 1);
-      let itemInCart = cart.find((newItem) => item.title === newItem.title);
+      let itemInCart = cart.find((newItem) => cartItem.title === newItem.title);
       if (itemInCart) {
         itemInCart.qty++;
       }
     }
   };
 
-  const handleRemoveOne = (item) => {
-    if (item.qty > 1) {
+  // Removing one ( - sign )
+  const handleRemoveOne = (cartItem) => {
+    if (cartItem.qty > 1) {
       setQuantity((prevQuantity) => prevQuantity - 1);
-      let itemInCart = cart.find((newItem) => item.title === newItem.title);
+      let itemInCart = cart.find((newItem) => cartItem.title === newItem.title);
       if (itemInCart) {
         itemInCart.qty--;
       }
@@ -64,11 +64,14 @@ export default function CartItem({ cartItem }) {
         </div>
 
         <div className="cart-number-input-div">
-          <button className="minus-btn" onClick={()=> handleRemoveOne(item)}>
+          <button
+            className="minus-btn"
+            onClick={() => handleRemoveOne(cartItem)}
+          >
             -
           </button>
-          <span>{item.qty}</span>
-          <button className="plus-btn" onClick={() => handleAddOne(item)}>
+          <span>{cartItem.qty}</span>
+          <button className="plus-btn" onClick={() => handleAddOne(cartItem)}>
             +
           </button>
         </div>
@@ -80,7 +83,7 @@ export default function CartItem({ cartItem }) {
         <div className="cart-remove-item-btn-div">
           <button
             className="remove-btn"
-            onClick={() => handleRemoveFromCart(item)}
+            onClick={() => handleRemoveFromCart(cartItem)}
           >
             Remove
           </button>

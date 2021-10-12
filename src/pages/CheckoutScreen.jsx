@@ -1,33 +1,25 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { CartContext } from "../Components/context/CartContext";
 import { v4 as uuidv4 } from "uuid";
 import { useHistory } from "react-router";
 
 export default function CheckoutScreen() {
-  const [countryList, setCountryList] = useState([]);
-  const [creditCardNumber, setCreditCardNumber] = useState()
-  const [expiryDate, setExpiryDate] = useState()
-  const [tax] = useState(5);
+  const [creditCardNumber, setCreditCardNumber] = useState();
+  const [expiryDate, setExpiryDate] = useState();
   const { cart, total } = useContext(CartContext);
   const history = useHistory();
 
-  useEffect(() => {
-    fetch("http://restcountries.eu/rest/v2/all")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setCountryList(data);
-      });
-  }, []);
-
-  const showCountries = (country) => {
-    return <option key={uuidv4()}>{country.name}</option>;
+  const normalizeCardNumber = (value) => {
+    setCreditCardNumber(
+      value
+        .replace(/\s/g, "")
+        .match(/.{1,4}/g)
+        ?.join(" ")
+        .substr(0, 19) || ""
+    );
   };
 
-  const normalizeCardNumber = (value) =>{
-    setCreditCardNumber(value.replace(/\s/g, "").match(/.{1,4}/g)?.join(" ").substr(0, 19) || "")
-  }
+  let delivery = total > 200 ? 0 : 10
 
   return (
     <>
@@ -71,12 +63,6 @@ export default function CheckoutScreen() {
               <input type="email" />
             </div>
             <div className="pair">
-              <label>Country</label>
-              <select name="country" id="">
-                {countryList.map(showCountries)}
-              </select>
-            </div>
-            <div className="pair">
               <label>Delivery address:</label>
               <input type="text" />
             </div>
@@ -104,15 +90,16 @@ export default function CheckoutScreen() {
           })}
           <div className="subtotal">
             <p>Subtotal</p>
-            <span>${total}</span>
+            <span>${total.toFixed(2)}</span>
           </div>
-          <div className="tax">
-            <p>Tax</p>
-            <span>$5</span>
+          <div className="delivery-price">
+            <p>Delivery</p>
+            { total > 200 ? <span>FREE DELIVERY</span> : <span> ${delivery} </span> }
+          
           </div>
           <div className="order-total">
             <p>ORDER TOTAL</p>
-            <span>${total + tax}</span>
+            <span>${(total + delivery).toFixed(2)}</span>
           </div>
         </div>
         <div className="payment-details">
@@ -131,20 +118,22 @@ export default function CheckoutScreen() {
                 name="cardNumber"
                 id="cardNumber"
                 value={creditCardNumber}
-                onChange={(e)=>{
-                  const {value} = e.target
-                  e.target.value = normalizeCardNumber(value)
+                onChange={(e) => {
+                  const { value } = e.target;
+                  e.target.value = normalizeCardNumber(value);
                 }}
               />
             </div>
             <div className="valid-cvv">
               <div className="valid">
                 <label>Expiry Date</label>
-                <input 
-                type="tel" 
-                placeholder='MM/YY'
-                value={expiryDate}
-                onChange={(e)=>{setExpiryDate(e.target.value)}}
+                <input
+                  type="tel"
+                  placeholder="MM/YY"
+                  value={expiryDate}
+                  onChange={(e) => {
+                    setExpiryDate(e.target.value);
+                  }}
                 />
               </div>
               <div className="cvv">
@@ -153,7 +142,7 @@ export default function CheckoutScreen() {
               </div>
             </div>
           </div>
-          <button className="pay-btn">PAY ${total + tax}</button>
+          <button className="pay-btn">PAY ${(total + delivery).toFixed(2)}</button>
         </div>
       </div>
     </>

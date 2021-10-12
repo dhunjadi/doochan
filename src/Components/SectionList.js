@@ -1,5 +1,4 @@
-const sectionList = [
-    {
+const sectionList = [{
         id: 1,
         listDivClass: 'home-art',
 
